@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+
+
+.btn-primary{
+    @apply text-white bg-red-600 p-4;
+}
+.heading{
+    @apply text-4xl text-dark font-bold text-center pb-3;
+}
+@tailwind utilities;

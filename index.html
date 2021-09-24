@@ -1,34 +1,982 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/tailwind.css" />
+
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <script
+      src="https://kit.fontawesome.com/9b98725867.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
     <title>workshop 3</title>
-</head>
-<body>
-<section class=" box1 w-full">
-  <div class="box1__overlay z-0"></div>
-
-  <div class="container mx-auto">
-    <nav class="flex justify-between items-start pt-10 ">
-        <img src="./assets/Logo_4 Copy.svg" alt="logo" class="  box1__logo">
-        <ul class="text-white flex justify-between items-center gap-16 text-base" >
-          <li class="outline-none hover:border-gray-700 border-transparent border-2 hover:border-current">Home</li>
-          <li class="hover:border-b-4">Services</li>
-          <li class="hover:border-b-4">Features</li>
-          <li class="hover:border-b-4">Works</li>
-          <li class="hover:border-b-4">Tech</li>
-          <li class="hover:border-b-4">Team Stack</li>
-          <li class="hover:border-b-4">Blog</li>
-          <li class="hover:border-b-4">Contact</li>
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+  </head>
+  <body class="antialiased">
+    <header class="absolute hidden z-50 top-0 left-0 w-full mx-auto">
+      <nav class="container flex justify-between items-start pt-10 mx-auto">
+        <img src="./assets/Logo_4 Copy.svg" alt="logo" class="box1__logo" />
+        <ul class="text-white flex justify-between items-center text-lg">
+          <li class="hover:bg-black ml-16"><a href="#">Home</a></li>
+          <li class="hover:border border-b-2 ml-16">
+            <a href="#services">Services</a>
+          </li>
+          <li class="hover:border-b-2 ml-16"><a href="#">Features</a></li>
+          <li class="hover:border-b-2 ml-16"><a href="#">Works</a></li>
+          <li class="hover:border-b-2 ml-16"><a href="#">Tech</a></li>
+          <li class="hover:border-b-2 ml-16"><a href="#">Team Stack</a></li>
+          <li class="hover:border-b-2 ml-16"><a href="#">Blog</a></li>
+          <li class="hover:border-b-2 ml-16"><a href="#">Contact</a></li>
         </ul>
-    </nav>
-  </div>
+      </nav>
+    </header>
+    <section
+      class="relative box1 bg-center bg-no-repeat bg-cover h-screen w-full"
+    >
+      <div class="box1__overlay absolute opacity-75 w-full h-full z-0"></div>
 
-</section>
-    
-</body>
+      <div class="container mx-auto">
+        <div
+          class="box1__content absolute top-80 left-32 text-white ml-16 w-3/5"
+        >
+          <h1 class="text-white text-8xl font-bold">Web Development Company</h1>
+          <p class="text-xl font-semiblod my-7">
+            Empowering startups with our innovative web development services
+          </p>
+          <button
+            type="button"
+            class="bg-red-400 rounded-full text-center mt-7 py-5 px-9"
+          >
+            TALK TO US
+          </button>
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-gradient-to-t from-black via-transparent to-transparent box2"
+      id="services"
+    >
+      <div class="container mx-auto box2 pt-16">
+        <h2 class="heading">OUR SERVICES</h2>
+        <hr class="bg-pink-500 text-center mx-auto w-36 h-1" />
+        <p class="text-center text-light pt-5 pb-12 text-sm">
+          From planning to the final launch, our services benefit startups and
+          enterprises alike without having to go overboard on development costs.
+        </p>
+        <div class="container flex justify-evenly items-center">
+          <div
+            class="
+              max-w-sm
+              p-6
+              text-center
+              h-full
+              border-2 border-gray-200 border-opacity-60
+              rounded-lg
+              overflow-hidden
+              hover:border-pink-400
+            "
+          >
+            <div class="bg-red-200 mx-auto rounded-full h-16 w-16">
+              <img
+                src="./assets/code pc.svg"
+                alt="pc code"
+                class="text-center my-auto p-5 mx-auto"
+              />
+            </div>
+            <h4 class="text-dark font-bold mt-2 mb-3">Web Application</h4>
+            <p class="text-light text-sm">
+              We use the latest frontend and backend technologies to build super
+              fast web apps that your customers will love.
+            </p>
+          </div>
+          <div
+            class="
+              max-w-sm
+              p-6
+              text-center
+              h-full
+              border-2 border-gray-200 border-opacity-60
+              rounded-lg
+              overflow-hidden
+              hover:border-pink-400
+            "
+          >
+            <div class="bg-pink-100 mx-auto rounded-full h-16 w-16">
+              <img
+                src="./assets/phone gear.svg"
+                alt="pc code"
+                class="text-center my-auto p-5 mx-auto"
+              />
+            </div>
+            <h4 class="text-dark font-bold mt-2 mb-3">Mobile Application</h4>
+            <p class="text-light text-sm">
+              We build high performance mobile apps that can run on multiple
+              platforms using technologies like React Native and Flutter.
+            </p>
+          </div>
+          <div
+            class="
+              max-w-sm
+              p-6
+              text-center
+              h-full
+              border-2 border-gray-200 border-opacity-60
+              rounded-lg
+              overflow-hidden
+              hover:border-pink-400
+            "
+          >
+            <div class="bg-gray-300 mx-auto rounded-full h-16 w-16">
+              <img
+                src="./assets/cloud.svg"
+                alt="pc code"
+                class="text-center my-auto p-5 mx-auto"
+              />
+            </div>
+            <h4 class="text-dark font-bold mt-2 mb-3">Cloud Architecturen</h4>
+            <p class="text-light text-sm">
+              We use serverless technologies like AWS and Google Cloud to build
+              highly secure and scalable applications.
+            </p>
+          </div>
+        </div>
+        <div class="container flex justify-evenly items-center mt-7">
+          <div
+            class="
+              max-w-sm
+              p-6
+              text-center
+              h-full
+              border-2 border-gray-200 border-opacity-60
+              rounded-lg
+              overflow-hidden
+              hover:border-pink-400
+            "
+          >
+            <div class="bg-first mx-auto rounded-full h-16 w-16">
+              <img
+                src="./assets/head bulb.svg"
+                alt="pc code"
+                class="text-center my-auto p-5 mx-auto"
+              />
+            </div>
+            <h4 class="text-dark font-bold mt-2 mb-3">
+              Idea to Full Digital Product
+            </h4>
+            <p class="text-light text-sm">
+              Transform your ideas to digital products that sell. We help
+              startups and enterprises build better products and services
+              thereby enhancing customer satisfaction and revenues.
+            </p>
+          </div>
+          <div
+            class="
+              max-w-sm
+              p-6
+              text-center
+              h-full
+              border-2 border-gray-200 border-opacity-60
+              rounded-lg
+              overflow-hidden
+              hover:border-pink-400
+            "
+          >
+            <div class="bg-second mx-auto rounded-full h-16 w-16">
+              <img
+                src="./assets/hand shake.svg"
+                alt="pc code"
+                class="text-center my-auto p-5 mx-auto"
+              />
+            </div>
+            <h4 class="text-dark font-bold mt-2 mb-3">MVP Development</h4>
+            <p class="text-light text-sm">
+              Our team of architects, developers and designers will help you get
+              your concepts up and running in no time and help you get the
+              crucial first to market advantage.
+            </p>
+          </div>
+          <div
+            class="
+              max-w-sm
+              p-6
+              text-center
+              h-full
+              border-2 border-gray-200 border-opacity-60
+              rounded-lg
+              overflow-hidden
+              hover:border-pink-400
+            "
+          >
+            <div class="bg-red-400 mx-auto rounded-full h-16 w-16">
+              <img
+                src="./assets/earth wifi.svg"
+                alt="pc code"
+                class="text-center my-auto p-5 mx-auto"
+              />
+            </div>
+            <h4 class="text-dark font-bold mt-2 mb-3">IoT Architecture</h4>
+            <p class="text-light text-sm">
+              Discover the untapped potential in your business by adopting the
+              latest IoT solutions to automate processes and boost your ROI.
+            </p>
+          </div>
+        </div>
+        <div class="text-center">
+          <h2 class="heading pt-16">Got an Awesome idea?</h2>
+          <hr class="bg-pink-500 text-center mx-auto w-36 h-1" />
+          <p class="text-center text-light pt-5 pb-12 text-sm">
+            Then why wait?<br />
+            We have the perfect team to transform your ideas into digital
+            products
+          </p>
+          <button
+            type="button"
+            class="
+              bg-red-400
+              text-white
+              mb-24
+              rounded-full
+              text-center
+              mt-7
+              py-5
+              px-9
+            "
+          >
+            Let's start
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="container mt-8">
+      <div class="text-center">
+        <h2 class="text-dark text-center text-4xl font-bold pt-16 pb-3">
+          WHY CHOOSE US?
+        </h2>
+        <hr class="bg-pink-500 text-center mx-auto w-36 h-1" />
+        <p class="text-center text-light pt-5 pb-12 text-sm">
+          We focus on our clients' success when building super fast web
+          applications.
+        </p>
+      </div>
+      <div class="container text-left flex justify-between items-center">
+        <div class="w-3/12 p-6">
+          <img src="./assets/coding boy.svg" alt="coding boy" />
+          <h4 class="text-dark font-bold mt-2 mb-3">
+            We Listen and We Pitch In
+          </h4>
+          <p class="text-light text-sm">
+            We take the time to know your business to understand what makes it
+            unique so that we can come up with solutions best suited to your
+            needs.
+          </p>
+        </div>
+        <div class="w-3/12 p-6">
+          <img src="./assets/code thumps up.svg" alt="coding boy" />
+          <h4 class="text-dark font-bold mt-2 mb-3">Code Quality</h4>
+          <p class="text-light text-sm">
+            We have a good code quality process that ensures better results and
+            reduced risks for your business without any delays in launch.
+          </p>
+        </div>
+        <div class="w-3/12 p-6">
+          <img src="./assets/group person.svg" alt="coding boy" />
+          <h4 class="text-dark font-bold mt-2 mb-3">Awesome Team</h4>
+          <p class="text-light text-sm">
+            Right from the get go our explosive team of architects, developers
+            and team leaders work together to bring you the best tech solutions
+          </p>
+        </div>
+        <div class="w-3/12 p-6">
+          <img src="./assets/Group 14.svg" alt="coding boy" />
+          <h4 class="text-dark font-bold mt-2 mb-3">Communication</h4>
+          <p class="text-light text-sm">
+            Communication is a key part of our success. You'll be updated daily
+            on project progress. We are always open to suggestions and clearing
+            any queries
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="box4">
+      <div class="container mx-auto">
+        <h2 class="heading pt-16">OUR PORTFOLIO</h2>
+        <hr class="bg-pink-500 text-center mx-auto w-36 h-1" />
+        <p class="text-center w-7/12 p-5 mx-auto text-light pt-5 pb-12 text-sm">
+          We had the privilege of helping some of the best startups and
+          enterprises across multiple industries achieve their business goals.
+        </p>
+        <div class="flex items-center justify-between">
+          <div class="max-w-md p-6 relative">
+            <h4 class="text-dark text-xl font-bold mb-2 text-center">
+              DAILYAI
+            </h4>
+            <div class="relative">
+              <img src="./assets/responsive view.svg" alt="pc " />
+              <div
+                class="
+                  w-full
+                  h-full
+                  top-0
+                  absolute
+                  bg-opacity-0 bg-gray-800
+                  hover:bg-opacity-90
+                  text-center
+                "
+              >
+                <p
+                  class="
+                    opacity-0
+                    text-white
+                    hover:opacity-100
+                    h-full
+                    flex
+                    items-center
+                  "
+                >
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+                  corrupti nihil est porro, animi vel omnis veritatis velit
+                  doloribus fugit, ducimus fugiat? Ullam, obcaecati laboriosam
+                  accusamus facilis esse dolor provident.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="max-w-md p-6 relative">
+            <h4 class="text-dark text-xl font-bold mb-2 text-center">
+              NATIONAL TAXI SERVICES
+            </h4>
+            <div class="relative">
+              <img src="./assets/yellow responsive.svg" alt="pc " />
+              <div
+                class="
+                  w-full
+                  h-full
+                  top-0
+                  absolute
+                  bg-opacity-0 bg-gray-800
+                  hover:bg-opacity-90
+                  text-center
+                "
+              >
+                <p
+                  class="
+                    opacity-0
+                    text-white
+                    hover:opacity-100
+                    h-full
+                    flex
+                    items-center
+                  "
+                >
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+                  corrupti nihil est porro, animi vel omnis veritatis velit
+                  doloribus fugit, ducimus fugiat? Ullam, obcaecati laboriosam
+                  accusamus facilis esse dolor provident.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="max-w-md p-6">
+            <h4 class="text-dark text-xl font-bold mb-2 text-center">
+              PROPERTYOK
+            </h4>
+            <div class="relative">
+              <img src="./assets/responsive red.svg" alt="pc " />
+              <div
+                class="
+                  w-full
+                  h-full
+                  top-0
+                  absolute
+                  bg-opacity-0 bg-gray-800
+                  hover:bg-opacity-90
+                  text-center
+                  duration-75
+                "
+              >
+                <p
+                  class="
+                    opacity-0
+                    text-white
+                    hover:opacity-100
+                    h-full
+                    flex
+                    items-center
+                    duration-75
+                  "
+                >
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+                  corrupti nihil est porro, animi vel omnis veritatis velit
+                  doloribus fugit, ducimus fugiat? Ullam, obcaecati laboriosam
+                  accusamus facilis esse dolor provident.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="text-center m-16">
+      <div class="container mx-auto">
+        <h2 class="text-dark text-center text-4xl font-bold pt-16 pb-3">
+          OUR TECH STACK
+        </h2>
+        <hr class="bg-pink-500 text-center mx-auto w-36 h-1" />
+        <p class="text-center text-light pt-5 text-sm">
+          Our talented team of developers are proficient across a multitude of
+          powerful technologies and platforms.
+        </p>
+        <p class="text-center text-light pb-12 mt-2 text-sm">
+          We meticulously choose the best technology stack to deliver a solution
+          that perfectly meets your business and client expectations.
+        </p>
+        <div class="flex items-center justify-between">
+          <div class="w-1/5 text-center">
+            <h4 class="text-dark text-xl font-bold mb-2 text-center">WEB</h4>
+            <div class="flex items-center justify-between flex-col">
+              <div class="flex items-center gap-x-10 justify-around">
+                <div class="text-center w-20">
+                  <img
+                    src="./assets/node.svg"
+                    alt=""
+                    class="text-center mx-auto"
+                  />
+                  <p class="text-xs font-semibold">NODE</p>
+                </div>
+                <div class="text-center w-20">
+                  <img
+                    src="./assets/vue.svg"
+                    alt=""
+                    class="text-center mx-auto"
+                  />
+                  <p class="text-xs font-semibold">VUE</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-x-10 justify-around mt-4">
+                <div class="text-center w-20">
+                  <img
+                    src="./assets/react.svg"
+                    alt=""
+                    class="text-center mx-auto"
+                  />
+                  <p class="text-xs font-semibold">REACT</p>
+                </div>
+                <div class="text-center w-20">
+                  <img
+                    src="./assets/angular.svg"
+                    alt=""
+                    class="text-center mx-auto"
+                  />
+                  <p class="text-xs font-semibold">ANGULARJS</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-1/5 text-center">
+            <h4 class="text-dark text-xl font-bold mb-2 text-center">MOBILE</h4>
+            <div class="flex items-center justify-between flex-col">
+              <div class="flex items-center gap-x-10 justify-around">
+                <div class="text-center w-20">
+                  <img
+                    src="./assets/react.svg"
+                    alt=""
+                    class="text-center mx-auto"
+                  />
+                  <p class="text-xs font-semibold">REACT</p>
+                </div>
+                <div class="text-center w-20">
+                  <img
+                    src="./assets/FLUTTER.SVG"
+                    alt=""
+                    class="text-center mx-auto"
+                  />
+                  <p class="text-xs font-semibold">FLUTTER</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-x-10 justify-around mt-4">
+                <div class="text-center w-20">
+                  <img
+                    src="./assets/NATIVESCRIPT.SVG"
+                    alt=""
+                    class="text-center mx-auto"
+                  />
+                  <p class="text-xs font-semibold">NATIVESCRIPT</p>
+                </div>
+                <div class="text-center w-20">
+                  <img
+                    src="./assets/IONIC.svg"
+                    alt=""
+                    class="text-center mx-auto"
+                  />
+                  <p class="text-xs font-semibold">IONIC</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-1/5 text-center">
+            <h4 class="text-dark text-xl font-bold mb-2 text-center">CLOUD</h4>
+            <div class="flex items-center justify-between flex-col">
+              <div class="flex items-center gap-x-10 justify-around">
+                <div class="text-center w-20">
+                  <img
+                    src="./assets/AWS.SVG"
+                    alt=""
+                    class="text-center mx-auto"
+                  />
+                  <p class="text-xs font-semibold">AWS</p>
+                </div>
+                <div class="text-center w-20">
+                  <img
+                    src="./assets/AZURE.SVG"
+                    alt=""
+                    class="text-center mx-auto"
+                  />
+                  <p class="text-xs font-semibold">AZURE</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-x-10 justify-around mt-4">
+                <div class="text-center w-20">
+                  <img
+                    src="./assets/GCP.SVG"
+                    alt=""
+                    class="text-center mx-auto"
+                  />
+                  <p class="text-xs font-semibold">GCP</p>
+                </div>
+                <div class="text-center w-20">
+                  <img
+                    src="./assets/FIREBASE.SVG "
+                    alt=""
+                    class="text-center mx-auto"
+                  />
+                  <p class="text-xs font-semibold">FIREBASE</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-1/5 text-center">
+            <h4 class="text-dark text-xl font-bold mb-2 text-center">
+              IoT,ML and AI
+            </h4>
+            <div class="flex items-center justify-between flex-col">
+              <div class="flex items-center gap-x-10 justify-around">
+                <div class="text-center w-20">
+                  <img
+                    src="./assets/MQTT.svg"
+                    alt=""
+                    class="text-center mx-auto"
+                  />
+                  <p class="text-xs font-semibold">MQTT</p>
+                </div>
+                <div class="text-center w-20">
+                  <img
+                    src="./assets/bigML.svg"
+                    alt=""
+                    class="text-center mx-auto"
+                  />
+                  <p class="text-xs font-semibold">BIGML</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-x-10 justify-around mt-4">
+                <div class="text-center w-20">
+                  <img
+                    src="./assets/TensorFlow.svg"
+                    alt=""
+                    class="text-center mx-auto"
+                  />
+                  <p class="text-xs font-semibold">TENSORBLOW</p>
+                </div>
+                <div class="text-center w-20">
+                  <img
+                    src="./assets/OpenCV.svg"
+                    alt=""
+                    class="text-center mx-auto"
+                  />
+                  <p class="text-xs font-semibold">OPENCV</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-1/5 text-center">
+            <h4 class="text-dark text-xl font-bold mb-2 text-center">DESIGN</h4>
+            <div class="flex items-center justify-between flex-col">
+              <div class="flex items-center gap-x-10 justify-around">
+                <div class="text-center w-20">
+                  <img
+                    src="./assets/sketch (1).svg"
+                    alt=""
+                    class="text-center mx-auto"
+                  />
+                  <p class="text-xs font-semibold">SKETCH</p>
+                </div>
+                <div class="text-center w-20">
+                  <img
+                    src="./assets/Figma.svg"
+                    alt=""
+                    class="text-center mx-auto"
+                  />
+                  <p class="text-xs font-semibold">FIGMA</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-x-10 justify-around mt-4">
+                <div class="text-center w-20">
+                  <img
+                    src="./assets/photoshop.svg"
+                    alt=""
+                    class="text-center mx-auto"
+                  />
+                  <p class="text-xs font-semibold">PHOTOSHOP</p>
+                </div>
+                <div class="text-center w-20">
+                  <img
+                    src="./assets/marvel.svg"
+                    alt=""
+                    class="text-center mx-auto h-10"
+                  />
+                  <p class="text-xs font-semibold">MARVEL</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-coffee w-full mb-24">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+        fill="#fff"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path
+          d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
+        />
+      </svg>
+      <div
+        class="
+          container
+          mx-auto
+          relative
+          bg-no-repeat bg-center bg-cover
+          coffee
+          h-80
+        "
+      ></div>
+    </section>
+    <section class="mb-36">
+      <div class="container mx-auto flex items-center justify-evenly">
+        <div class="max-w-sm shadow-lg p-3 h-52">
+          <div class="flex items-center justify-start">
+            <img
+              src="./assets/smiling.svg"
+              alt="person"
+              class="text-center rounded-full h-24 w-24"
+            />
+            <div class="mx-4">
+              <h4 class="text-lg font-bold text-left">Christoffer Klemming</h4>
+              <p class="text-xs text-light text-left leading-8">
+                Growth Product Manager at Google<br />
+                and Founder of Waitwhile Inc.
+              </p>
+            </div>
+          </div>
+          <p class="text-xs mt-3 text-light text-left">
+            "Neoito have consistently been delivering high-quality and
+            performant code for Waitwhile. They're well versed in the latest
+            framework (incl. Angular 6+, Redux, NgRx etc.) and are skilled
+            communicators. We enjoy working with them very much!"
+          </p>
+        </div>
+        <div class="max-w-sm shadow-lg p-3 h-52">
+          <div class="flex items-center justify-start">
+            <img
+              src="./assets/speaking.svg"
+              alt="person"
+              class="text-center rounded-full h-24 w-24"
+            />
+            <div class="mx-4">
+              <h4 class="text-lg font-bold text-left">Spencer Dusebout</h4>
+              <p class="text-xs text-light text-left">
+                Managing Partner, Daily AI
+              </p>
+            </div>
+          </div>
+          <p class="text-xs mt-3 text-light text-left">
+            "They are extremely technically competent, both in terms of their
+            innovative approach and ability to execute."
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="bg-bgc">
+      <div class="container mx-auto">
+        <h2 class="heading pt-16">OUR CORE TEAM</h2>
+        <hr class="bg-pink-500 text-center mx-auto w-36 h-1" />
+        <p class="text-center w-7/12 p-5 mx-auto text-light pt-5 pb-12 text-sm">
+          We've got a seasoned team of tech wizards who share a common vision
+          for the future
+        </p>
+      </div>
+    </section>
+    <section class="mb-20">
+      <div class="container mx-auto">
+        <h2 class="heading pt-16">BLOGS</h2>
+        <hr class="bg-pink-500 text-center mx-auto font-semibold w-36 h-1" />
+        <p class="text-center w-7/12 p-5 mx-auto text-light pt-5 pb-12 text-sm">
+          We are constantly learning new stuff and love to share it with you
+          guys. Take a look.
+        </p>
+      </div>
+      <div
+        class="mt-6 container gap-10 mx-auto flex items-center justify-evenly"
+      >
+        <article
+          class="
+            max-w-sm
+            bg-white
+            group
+            relative
+            rounded-lg
+            overflow-hidden
+            shadow-lg
+            hover:shadow-2xl
+            transform
+            duration-200
+          "
+        >
+          <div class="relative w-full">
+            <img
+              src="./assets/3.svg"
+              alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug."
+              class="w-full h-full object-center object-cover"
+            />
+          </div>
+          <div class="px-3 py-4">
+            <p class="text-light text-sm text-left font-normal">
+              August 23,2019
+            </p>
+            <h3 class="text-xl hover:text-newp text-dark font-semibold w-3/4 pb-4">
+              How to expose localhost to any device using Ngrok
+            </h3>
+            <img
+              src="./assets/visibility_black_24dp.svg"
+              alt=" views"
+              class="inline"
+            />
+            <p class="text-sm text-light inline px-2">4.5k views</p>
+            <img
+              src="./assets/chat_bubble_outline_black_24dp.svg"
+              alt=""
+              class="inline"
+            />
+            <p class="text-sm text-light inline px-2">07</p>
+            <img src="./assets/reply_black_24dp.svg" alt="" class="inline" />
+            <p class="text-sm text-light inline px-2">332</p>
+          </div>
+        </article>
+
+        <article
+          class="
+            max-w-sm
+            bg-white
+            group
+            relative
+            rounded-lg
+            overflow-hidden
+            shadow-lg
+            hover:shadow-2xl
+            transform
+            duration-200
+          "
+        >
+          <div class="relative w-full">
+            <img
+              src="./assets/2.svg"
+              alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug."
+              class="w-full h-full object-center object-cover"
+            />
+          </div>
+          <div class="px-3 py-4">
+            <p class="text-light text-sm text-left font-normal">
+              August 23,2019
+            </p>
+            <h3 class="text-xl hover:text-newp text-dark font-semibold w-3/4 pb-4">
+              Introduction to Machine Learning
+            </h3>
+            <img
+              src="./assets/visibility_black_24dp.svg"
+              alt=" views"
+              class="inline"
+            />
+            <p class="text-sm text-light inline px-2">4.5k views</p>
+            <img
+              src="./assets/chat_bubble_outline_black_24dp.svg"
+              alt=""
+              class="inline"
+            />
+            <p class="text-sm text-light inline px-2">07</p>
+            <img src="./assets/reply_black_24dp.svg" alt="" class="inline" />
+            <p class="text-sm text-light inline px-2">332</p>
+          </div>
+        </article>
+        <article
+          class="
+            max-w-sm
+            bg-white
+            group
+            relative
+            rounded-lg
+            overflow-hidden
+            shadow-lg
+            hover:shadow-2xl
+            transform
+            duration-200
+          "
+        >
+          <div class="relative w-full">
+            <img
+              src="./assets/1.svg"
+              alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug."
+              class="w-full h-full object-center object-cover"
+            />
+          </div>
+          <div class="px-3 py-4">
+            <p class="text-light text-sm text-left font-normal">
+              August 23,2019
+            </p>
+            <h3 class="text-xl hover:text-newp text-dark font-semibold w-3/4 pb-4">
+              Okay Google! What's new in search?
+            </h3>
+            <img
+              src="./assets/visibility_black_24dp.svg"
+              alt=" views"
+              class="inline"
+            />
+            <p class="text-sm text-light inline px-2">4.5k views</p>
+            <img
+              src="./assets/chat_bubble_outline_black_24dp.svg"
+              alt=""
+              class="inline"
+            />
+            <p class="text-sm text-light inline px-2">07</p>
+            <img src="./assets/reply_black_24dp.svg" alt="" class="inline" />
+            <p class="text-sm text-light inline px-2">332</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="bg-BGC2">
+      <div class="container mx-auto">
+        <h2 class="heading pt-16">LET'S CONNECT</h2>
+        <hr class="bg-pink-500 text-center mx-auto w-36 h-1" />
+        <p class="text-center w-7/12 p-5 mx-auto text-light pt-5 pb-12 text-sm">
+          Got the next big idea? Then don't wait.
+        </p>
+        <div class=" px-6 flex items-start justify-around flex-col-reverse md:flex-row">
+          <form class="md:w-3/4 mb-24">
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                
+                <input class="appearance-none block w-full bg-white text-dark border text-sm border-gray-200 rounded-full py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Your Name">
+                <p class="hidden md:block text-red-500 text-xs italic">Please fill out this field.</p>
+              </div>
+              <div class="w-full md:w-1/2 px-3">
+                
+                <input class="appearance-none block w-full bg-white text-dark border  text-sm border-gray-200 rounded-full py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Your Email">
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full px-3">
+                
+                <input class="appearance-none block w-full bg-white text-dark border text-sm border-gray-200 rounded-full py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="text" placeholder="Subject">
+                
+              </div>
+            </div>
+            
+              <div class="flex flex-wrap -mx-3 mb-1">
+                <div class="w-full px-3">
+                  
+                  <textarea rows="10" class="appearance-none block w-full text-gray-700 border border-gray-200 rounded-3xl py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500" placeholder="Your Message">
+                   
+                  </textarea>
+                </div>
+            </div>
+            <div class="md:text-left text-center">
+              <button
+              type="button"
+              class="bg-newp rounded-full mx-auto text-white text-center mt-3 py-3 px-9"
+            >
+              SEND MESSAGE
+            </button>
+            </div>
+          </form>
+          <div class="md:w-1/4 flex items-start  justify-between md:flex-col md:px-14">
+            <div class="px-6">
+              <img src="./assets/mail.svg" alt="mail" class="my-2">
+            <h4 class="text-dark text-md font-semibold ">E-mail</h4>
+            <p class="text-newp text-sm py-1">bd@neoito.com</p>
+            </div>
+            <div class="px-6">
+              <img src="./assets/ring_volume_black_24dp.svg" alt="mail" class="my-2">
+            <h4 class="text-dark text-md font-semibold ">Phone</h4>
+            <p class="text-newp text-sm py-1">+91 6238524482</p>
+            </div>
+          
+
+        </div>
+        </div>
+    </section>
+    <section class="">
+      <div class="container flex items-start justify-around my-20 flex-col md:flex-row">
+        <div class="md:w-1/2 md:text-left text-center">
+          <h4 class="font-bold text-footer text-3xl mx-auto md:m-0 md:w-1/2 mb-6 ">Web Development Company</h4>
+          <p class="text-light md:w-4/5">If you think you have the passion, attitude and capability to join us the next big software company so that we can get the conversion.</p>
+          <ul class=" w-1/4 footer-social flex items-center justify-evenly mt-3">
+            <li ><a class="facebook text-center  " target="_blank" href="https://www.facebook.com/neoito/"><i class="fab fa-facebook-f py-3 rounded-full bg-newp w-10 h-10 "></i></a>
+            </li>
+            <li><a class="twitter text-center" target="_blank" href="https://twitter.com/neoitocom"><i class="fab fa-twitter py-3 rounded-full bg-newp w-10 h-10"></i></a></li>
+            <li><a class="linkedin text-center" target="_blank" href="https://www.linkedin.com/company/neoito/"><i class="fab fa-linkedin-in py-3 rounded-full bg-newp w-10 h-10"></i></a></li>
+          </ul>
+        </div>
+
+
+        <div class="w-1/2 text-center md:text-left">
+          <h4 class=" font-bold text-footer text-xl">INSTAGRAM</h4>
+          <div class="flex items-start ">
+            <img src="./assets/1f.svg" alt="">
+            <img src="./assets/2f.svg" alt="">
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class=" container flex justify-between flex-col md:flex-row my-5">
+      <div class="flex justify-between items-center"><p class="text-sm text-light"><a href="www.neoito.com" class="text-" target="_blank">© All Rights Reserved - Powered by neoito.com</a>
+       
+      </p></div>
+
+
+
+      <div class="flex justify-between items-center flex-col md:flex-row ">
+        <span class="text-sm text-light"><a href="#" class="">TOS</a></span>
+        <span class="text-sm mx-10 text-light"><a href="#" class="">Privacy Policy</a></span>
+        <span class="text-sm text-light"><a href="#" class="">Cookie Policy</a></span>
+        <span class="text-sm  mx-10 text-light"><a href="#" class=""><img src="./assets/scroll up.svg" alt=""></a></span>
+
+        </div>
+    </footer>
+  </body>
 </html>
