@@ -20,6 +20,10 @@ nav{
 .box{
     &1{
     background-image: url(../assets/hero.png);
+    @media only screen and (max-width: 600px)  {
+        background-image : url(../assets/mobile.png);
+        height:745px !important;
+    }
       
         &__overlay{
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 82.85%);

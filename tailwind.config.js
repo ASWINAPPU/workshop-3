@@ -1,7 +1,19 @@
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
+  important: true,
+  
   theme: {
+    screens: {
+      'tablet': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'laptop': '1440px',
+      // => @media (min-width: 1024px) { ... }
+
+      'desktop': '1280px',
+      // => @media (min-width: 1280px) { ... }
+    },
     container :{
       center : true,
     },
@@ -22,6 +34,11 @@ module.exports = {
      
     // },
     extend: {
+      lineHeight: {
+        
+        '12': '3.5rem',
+       },
+       
       colors:{
         'first':'#f3ead6',
         'second':'#E7E6FF',
@@ -37,12 +54,16 @@ module.exports = {
         
 
       },
+      width: {
+        '1/12': '9% !important',
+       },
       display: ['hover', 'focus',"group-hover"],
     },
     backgroundImage: {
       'center-pattern': "url('../assets/coffe.svg')",
       
      },
+     
   },
   variants: {
     extend: {},
