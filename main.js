@@ -110,7 +110,7 @@ const hamc = document.getElementById("close");
 const hammenu = document.getElementById("hamburger");
 hamc.style.display = 'none';
 hammenu.style.display = 'block';
-let i=0;
+let i;
 function hamfunc(){
   if(i===0){
     i=1;

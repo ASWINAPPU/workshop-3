@@ -32,16 +32,14 @@
 
         </div>
         <ul class="text-white hidden  justify-around items-center text-lg lg:gap-x-12 xl:gap-x-20 lg:flex">
-          <li class="transition-transform border-b-2 border-transparent hover:border-newp"><a href="#">Home</a></li>
-          <li class="borderani border-b-2 border-transparent hover:border-newp">
-            <a href="#services">Services</a>
-          </li>
-          <li class="border-b-2 border-transparent hover:border-newp "><a href="#Features">Features</a></li>
-          <li class="border-b-2 border-transparent hover:border-newp "><a href="#Works">Works</a></li>
-          <li class="border-b-2 border-transparent hover:border-newp "><a href="#Tech">Tech</a></li>
-          <li class="border-b-2 border-transparent hover:border-newp "><a href="#Team Stack">Team Stack</a></li>
-          <li class="border-b-2 border-transparent hover:border-newp "><a href="#Blog">Blog</a></li>
-          <li class="border-b-2 border-transparent hover:border-newp "><a href="#Contact">Contact</a></li>
+          <li class="relative"><a href="#">Home</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
+          <li class="relative"><a href="#services">Services</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
+          <li class="  relative "><a href="#Features">Features</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
+          <li class="relative "><a href="#Works">Works</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
+          <li class="relative "><a href="#Tech">Tech</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
+          <li class="relative "><a href="#Team Stack">Team Stack</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
+          <li class="relative "><a href="#Blog">Blog</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
+          <li class="relative "><a href="#Contact">Contact</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
         </ul>
 
       </nav>
@@ -51,18 +49,18 @@
       class="relative box1 bg-center bg-no-repeat bg-cover h-screen w-full"
     >
       <div class="box1__overlay absolute opacity-75 w-full h-full z-0"></div>
-      <div id="hamburger" class="bg-white  w-full z-50 absolute top-0 right-8 h-5/6 md:h-ham lg:hidden">
+      <div id="hamburger" class="bg-white md:w-1/3  w-full z-50 absolute top-0 right-8 h-5/6 md:h-ham lg:hidden">
         <ul class="text-dark text-base mt-2 justify-center py-4 items-start gap-y-3  ml-10  flex flex-col">
-          <li class="border-b-2 border-transparent hover:border-newp"><a href="#">Home</a></li>
-          <li class="border-b-2 border-transparent hover:border-newp">
-            <a href="#services">Services</a>
+          <li class="relative"><a href="#">Home</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
+          <li class="relative">
+            <a href="#services">Services</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div>
           </li>
-          <li class="border-b-2 border-transparent hover:border-newp "><a href="#Features">Features</a></li>
-          <li class="border-b-2 border-transparent hover:border-newp "><a href="#Works">Works</a></li>
-          <li class="border-b-2 border-transparent hover:border-newp "><a href="#Tech">Tech</a></li>
-          <li class="border-b-2 border-transparent hover:border-newp "><a href="#Team Stack">Team Stack</a></li>
-          <li class="border-b-2 border-transparent hover:border-newp "><a href="#Blog">Blog</a></li>
-          <li class="border-b-2 border-transparent hover:border-newp "><a href="#Contact">Contact</a></li>
+          <li class="relative "><a href="#Features">Features</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
+          <li class="relative "><a href="#Works">Works</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
+          <li class="relative "><a href="#Tech">Tech</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
+          <li class="relative "><a href="#Team Stack">Team Stack</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
+          <li class="relative "><a href="#Blog">Blog</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
+          <li class="relative "><a href="#Contact">Contact</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
         </ul>
 
       </div>
@@ -95,7 +93,8 @@
           From planning to the final launch, our services benefit startups and
           enterprises alike without having to go overboard on development costs.
         </p>
-        <div class="container flex flex-col mx-auto justify-evenly items-center md:flex-row">
+        <div class="container flex-col mx-auto justify-evenly items-center md:flex-row hidden
+        lg:flex">
           <div
             class="
               max-w-sm
@@ -132,6 +131,7 @@
               rounded-lg
               overflow-hidden
               hover:border-pink-400
+              
             "
           >
             <div class="bg-pink-100 mx-auto rounded-full h-16 w-16">
@@ -173,7 +173,7 @@
             </p>
           </div>
         </div>
-        <div class="container flex flex-col mx-auto justify-evenly items-center md:flex-row mt-7">
+        <div class="container hidden lg:flex flex-col mx-auto justify-evenly items-center md:flex-row mt-7">
           <div
             class="
               max-w-sm
@@ -254,6 +254,123 @@
             </p>
           </div>
         </div>
+        <div class="container col px-2 lg:hidden">
+        
+          <div class="tabs ">
+            <div class="tab border border-accordion mb-2">
+              <input type="checkbox" id="chck1">
+              <label class="tab-label text-dark text-center " for="chck1">Web Application</label>
+              <div class="tab-content text-center">
+                <div class="bg-red-200 mx-auto rounded-full h-16 w-16">
+                  <img
+                    src="./assets/code pc.svg"
+                    alt="pc code"
+                    class="text-center my-auto p-5 mx-auto "
+                  />
+                </div>
+                <h4 class="text-dark font-bold mt-2 mb-3">Web Application</h4>
+                <p class="text-light text-sm">
+                  We use the latest frontend and backend technologies to build super
+                  fast web apps that your customers will love.
+                </p>
+              </div>
+            </div>
+            <div class="tab  border border-accordion mb-2">
+              <input type="checkbox" id="chck2">
+              <label class="tab-label text-dark text-center" for="chck2">Mobile Application</label>
+              <div class="tab-content text-center">
+                <div class="bg-pink-100 mx-auto rounded-full h-16 w-16">
+                  <img
+                    src="./assets/phone gear.svg"
+                    alt="pc code"
+                    class="text-center my-auto p-5 mx-auto"
+                  />
+                </div>
+                <h4 class="text-dark font-bold mt-2 mb-3">Mobile Application</h4>
+                <p class="text-light text-sm">
+                  We build high performance mobile apps that can run on multiple
+                  platforms using technologies like React Native and Flutter.
+                </p>
+              </div>
+            </div>
+            <div class="tab  border border-accordion mb-2">
+              <input type="checkbox" id="chck3">
+              <label class="tab-label text-dark text-center" for="chck3">Cloud Architecture</label>
+              <div class="tab-content text-center">
+                <div class="bg-gray-300 mx-auto rounded-full h-16 w-16">
+                  <img
+                    src="./assets/cloud.svg"
+                    alt="pc code"
+                    class="text-center my-auto p-5 mx-auto"
+                  />
+                </div>
+                <h4 class="text-dark font-bold mt-2 mb-3">Cloud Architecture</h4>
+                <p class="text-light text-sm">
+                  We use serverless technologies like AWS and Google Cloud to build
+                  highly secure and scalable applications.
+                </p>
+              </div>
+            </div>
+            <div class="tab  border border-accordion mb-2">
+              <input type="checkbox" id="chck4">
+              <label class="tab-label text-dark text-center" for="chck4">Idea to Full Digital Product</label>
+              <div class="tab-content text-center">
+                <div class="bg-first mx-auto rounded-full h-16 w-16">
+                  <img
+                    src="./assets/head bulb.svg"
+                    alt="pc code"
+                    class="text-center my-auto p-5 mx-auto"
+                  />
+                </div>
+                <h4 class="text-dark font-bold mt-2 mb-3">
+                  Idea to Full Digital Product
+                </h4>
+                <p class="text-light text-sm">
+                  Transform your ideas to digital products that sell. We help
+                  startups and enterprises build better products and services
+                  thereby enhancing customer satisfaction and revenues.
+                </p>
+              </div>
+            </div>
+            <div class="tab  border border-accordion mb-2">
+              <input type="checkbox" id="chck5">
+              <label class="tab-label text-dark text-center" for="chck5">MVP Development</label>
+              <div class="tab-content text-center">
+                <div class="bg-second mx-auto rounded-full h-16 w-16">
+                  <img
+                    src="./assets/hand shake.svg"
+                    alt="pc code"
+                    class="text-center my-auto p-5 mx-auto"
+                  />
+                </div>
+                <h4 class="text-dark font-bold mt-2 mb-3">MVP Development</h4>
+                <p class="text-light text-sm">
+                  Our team of architects, developers and designers will help you get
+                  your concepts up and running in no time and help you get the
+                  crucial first to market advantage.
+                </p>
+              </div>
+            </div>
+            <div class="tab  border border-accordion mb-2">
+              <input type="checkbox" id="chck6">
+              <label class="tab-label text-dark text-center" for="chck6">IoT Architecture</label>
+              <div class="tab-content text-center">
+                <div class="bg-red-400 mx-auto rounded-full h-16 w-16">
+                  <img
+                    src="./assets/earth wifi.svg"
+                    alt="pc code"
+                    class="text-center my-auto p-5 mx-auto"
+                  />
+                </div>
+                <h4 class="text-dark font-bold mt-2 mb-3">IoT Architecture</h4>
+                <p class="text-light text-sm">
+                  Discover the untapped potential in your business by adopting the
+                  latest IoT solutions to automate processes and boost your ROI.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>   
         <div class="text-center">
           <h2 class="heading pt-16">Got an Awesome idea?</h2>
           <hr class="bg-pink-500 text-center mx-auto w-36 h-1" />
@@ -281,104 +398,9 @@
           </button>
         </div>
       </div>
- <button class="accordion text-dark font-bold text-center"><span class="hide">Web Application</span></button>
-<div class="panel text-center">
-  <div class="bg-red-200 mx-auto rounded-full h-16 w-16">
-    <img
-      src="./assets/code pc.svg"
-      alt="pc code"
-      class="text-center my-auto p-5 mx-auto "
-    />
-  </div>
-  <h4 class="text-dark font-bold mt-2 mb-3">Web Application</h4>
-  <p class="text-light text-sm">
-    We use the latest frontend and backend technologies to build super
-    fast web apps that your customers will love.
-  </p>
- 
-</div>
 
-<button class="accordion text-dark font-bold text-center"><span class="hide">Mobile Application</span></button>
-<div class="panel text-center">
-  <div class="bg-pink-100 mx-auto rounded-full h-16 w-16">
-    <img
-      src="./assets/phone gear.svg"
-      alt="pc code"
-      class="text-center my-auto p-5 mx-auto"
-    />
-  </div>
-  <h4 class="text-dark font-bold mt-2 mb-3">Mobile Application</h4>
-  <p class="text-light text-sm">
-    We build high performance mobile apps that can run on multiple
-    platforms using technologies like React Native and Flutter.
-  </p>
-</div>
-
-<button class="accordion text-dark font-bold text-center"><span class="hide">Cloud Architecturen</span></button>
-<div class="panel text-center">
-  <div class="bg-gray-300 mx-auto rounded-full h-16 w-16">
-    <img
-      src="./assets/cloud.svg"
-      alt="pc code"
-      class="text-center my-auto p-5 mx-auto"
-    />
-  </div>
-  <h4 class="text-dark font-bold mt-2 mb-3">Cloud Architecturen</h4>
-  <p class="text-light text-sm">
-    We use serverless technologies like AWS and Google Cloud to build
-    highly secure and scalable applications.
-  </p>
-</div>
-<button class="accordion text-dark font-bold text-center"><span class="hide"> Idea to Full Digital Product</span></button>
-<div class="panel text-center">
-  <div class="bg-first mx-auto rounded-full h-16 w-16">
-    <img
-      src="./assets/head bulb.svg"
-      alt="pc code"
-      class="text-center my-auto p-5 mx-auto"
-    />
-  </div>
-  <h4 class="text-dark font-bold mt-2 mb-3">
-    Idea to Full Digital Product
-  </h4>
-  <p class="text-light text-sm">
-    Transform your ideas to digital products that sell. We help
-    startups and enterprises build better products and services
-    thereby enhancing customer satisfaction and revenues.
-  </p>
-</div>
-<button class="accordion text-dark font-bold text-center"><span class="hide">MVP Development</span></button>
-<div class="panel text-center">
-  <div class="bg-second mx-auto rounded-full h-16 w-16">
-    <img
-      src="./assets/hand shake.svg"
-      alt="pc code"
-      class="text-center my-auto p-5 mx-auto"
-    />
-  </div>
-  <h4 class="text-dark font-bold mt-2 mb-3">MVP Development</h4>
-  <p class="text-light text-sm">
-    Our team of architects, developers and designers will help you get
-    your concepts up and running in no time and help you get the
-    crucial first to market advantage.
-  </p>
-</div>
-<button class="accordion text-dark font-bold text-center">
-  <span class="hide">IoT Architecture</span></button>
-<div class="panel text-center">
-  <div class="bg-red-400 mx-auto rounded-full h-16 w-16">
-    <img
-      src="./assets/earth wifi.svg"
-      alt="pc code"
-      class="text-center my-auto p-5 mx-auto"
-    />
-  </div>
-  <h4 class="text-dark font-bold mt-2 mb-3">IoT Architecture</h4>
-  <p class="text-light text-sm">
-    Discover the untapped potential in your business by adopting the
-    latest IoT solutions to automate processes and boost your ROI.
-  </p>
-</div>
+        
+        
 
 
     </section>

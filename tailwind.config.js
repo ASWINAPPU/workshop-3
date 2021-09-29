@@ -11,6 +11,7 @@ module.exports = {
  
      
     extend: {
+      
       colors:{
         'first':'#f3ead6',
         'second':'#E7E6FF',
@@ -21,6 +22,7 @@ module.exports = {
         'BGC2': '#F7F9FF',
         'newp': '#EE7892',
         'footer':'#282828',
+        'accordion' :'#D0D0D0',
       },
       height: {
         ham: '92vh',
