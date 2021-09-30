@@ -108,9 +108,11 @@ $('.responsive3').slick({
 const hamo = document.getElementById("open");
 const hamc = document.getElementById("close");
 const hammenu = document.getElementById("hamburger");
-hamc.style.display = 'none';
-hammenu.style.display = 'block';
+
 let i;
+hamc.style.display = 'none';
+hammenu.style.display = 'none';
+
 function hamfunc(){
   if(i===0){
     i=1;
@@ -142,3 +144,4 @@ for (j = 0; i < acc.length; i++) {
     } 
   });
 }
+addEventListener("click")

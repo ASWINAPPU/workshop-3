@@ -25,6 +25,10 @@ html{
     &2{
         background-position: 50% 0%;
     }
+    &4{
+      border-top-left-radius: 40%;
+      border-top-right-radius: 40%;
+    }
 }
 .coffee{
     background-image: url(../assets/coffe.svg);
