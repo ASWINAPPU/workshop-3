@@ -81,12 +81,6 @@ li:hover .borderani {
   transition: max-height 0.2s ease-out;
 }
 
-input {
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
-}
-
 .row {
   display: flex;
 }
@@ -109,6 +103,12 @@ input {
   width: 100%;
   color: white;
   overflow: hidden;
+}
+
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
 }
 
 .tab-label {

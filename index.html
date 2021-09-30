@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="public/css/tailwind.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
-<!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
+    />
 
     <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
-    
+
     <script
       src="https://kit.fontawesome.com/9b98725867.js"
       crossorigin="anonymous"
@@ -18,30 +26,73 @@
 
     <link rel="stylesheet" href="./css/style.css" />
     <title>workshop 3</title>
-    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
   </head>
   <body class="antialiased">
-    <header class="absolute  z-40 top-0 left-0 w-full mx-auto">
-      <nav class="lg:container flex  justify-between items-center lg:items-start lg:pt-10 mx-auto">
+    <header class="absolute z-40 top-0 left-0 w-full mx-auto">
+      <nav
+        class="
+          lg:container
+          flex
+          justify-between
+          items-center
+          lg:items-start lg:pt-10
+          mx-auto
+        "
+      >
         <img src="./assets/Logo_4 Copy.svg" alt="logo" class="box1__logo" />
-        
+
         <div class="lg:hidden md:mr-1 md:m-0 pr-1 md:pr-0">
-            <button type="button" onclick="hamfunc()">
-              <img src="./assets/ham.svg" alt="" id="open">
-              <img  src="./assets/close.svg" alt="" class="" id="close"></button>
-
+          <button type="button" onclick="hamfunc()">
+            <img src="./assets/ham.svg" alt="" id="open" />
+            <img src="./assets/close.svg" alt="" class="" id="close" />
+          </button>
         </div>
-        <ul class="text-white hidden  justify-around items-center text-lg lg:gap-x-12 xl:gap-x-20 lg:flex">
-          <li class="relative"><a href="#">Home</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
-          <li class="relative"><a href="#services">Services</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
-          <li class="  relative "><a href="#Features">Features</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
-          <li class="relative "><a href="#Works">Works</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
-          <li class="relative "><a href="#Tech">Tech</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
-          <li class="relative "><a href="#Team Stack">Team Stack</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
-          <li class="relative "><a href="#Blog">Blog</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
-          <li class="relative "><a href="#Contact">Contact</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
+        <ul
+          class="
+            text-white
+            hidden
+            justify-around
+            items-center
+            text-lg
+            md:gap-x-8
+            xl:gap-x-14
+            lg:flex
+          "
+        >
+          <li class="relative">
+            <a href="#">Home</a>
+            <div class="absolute bottom-0 borderani bg-newp h-1"></div>
+          </li>
+          <li class="relative">
+            <a href="#services">Services</a>
+            <div class="absolute bottom-0 borderani bg-newp h-1"></div>
+          </li>
+          <li class="relative">
+            <a href="#Features">Features</a>
+            <div class="absolute bottom-0 borderani bg-newp h-1"></div>
+          </li>
+          <li class="relative">
+            <a href="#Works">Works</a>
+            <div class="absolute bottom-0 borderani bg-newp h-1"></div>
+          </li>
+          <li class="relative">
+            <a href="#Team">Team</a>
+            <div class="absolute bottom-0 borderani bg-newp h-1"></div>
+          </li>
+          <li class="relative">
+            <a href="#Tech Stack">Tech Stack</a>
+            <div class="absolute bottom-0 borderani bg-newp h-1"></div>
+          </li>
+          <li class="relative">
+            <a href="#Blog">Blog</a>
+            <div class="absolute bottom-0 borderani bg-newp h-1"></div>
+          </li>
+          <li class="relative">
+            <a href="#Contact">Contact</a>
+            <div class="absolute bottom-0 borderani bg-newp h-1"></div>
+          </li>
         </ul>
-
       </nav>
     </header>
     <!-- landing -->
@@ -49,32 +100,107 @@
       class="relative box1 bg-center bg-no-repeat bg-cover h-screen w-full"
     >
       <div class="box1__overlay absolute opacity-75 w-full h-full z-0"></div>
-      <div id="hamburger" class="bg-white md:w-1/3  w-full z-50 absolute top-0 right-8 h-5/6 md:h-ham lg:hidden">
-        <ul class="text-dark text-base mt-2 justify-center py-4 items-start gap-y-3  ml-10  flex flex-col">
-          <li class="relative"><a href="#">Home</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
+      <div
+        id="hamburger"
+        class="
+          bg-white
+          md:w-1/3
+          w-full
+          z-50
+          absolute
+          top-0
+          right-8
+          h-5/6
+          md:h-ham
+          lg:hidden
+        "
+      >
+        <ul
+          class="
+            text-dark text-base
+            mt-2
+            justify-center
+            py-4
+            items-start
+            gap-y-3
+            ml-10
+            flex flex-col
+          "
+        >
           <li class="relative">
-            <a href="#services">Services</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div>
+            <a href="#">Home</a>
+            <div class="absolute bottom-0 borderani bg-newp h-1"></div>
           </li>
-          <li class="relative "><a href="#Features">Features</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
-          <li class="relative "><a href="#Works">Works</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
-          <li class="relative "><a href="#Tech">Tech</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
-          <li class="relative "><a href="#Team Stack">Team Stack</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
-          <li class="relative "><a href="#Blog">Blog</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
-          <li class="relative "><a href="#Contact">Contact</a><div class="absolute bottom-0 borderani  bg-newp h-1 "></div></li>
+          <li class="relative">
+            <a href="#services">Services</a>
+            <div class="absolute bottom-0 borderani bg-newp h-1"></div>
+          </li>
+          <li class="relative">
+            <a href="#Features">Features</a>
+            <div class="absolute bottom-0 borderani bg-newp h-1"></div>
+          </li>
+          <li class="relative">
+            <a href="#Works">Works</a>
+            <div class="absolute bottom-0 borderani bg-newp h-1"></div>
+          </li>
+          <li class="relative">
+            <a href="#Team">Team</a>
+            <div class="absolute bottom-0 borderani bg-newp h-1"></div>
+          </li>
+          <li class="relative">
+            <a href="#Tech Stack">Tech Stack</a>
+            <div class="absolute bottom-0 borderani bg-newp h-1"></div>
+          </li>
+          <li class="relative">
+            <a href="#Blog">Blog</a>
+            <div class="absolute bottom-0 borderani bg-newp h-1"></div>
+          </li>
+          <li class="relative">
+            <a href="#Contact">Contact</a>
+            <div class="absolute bottom-0 borderani bg-newp h-1"></div>
+          </li>
         </ul>
-
       </div>
       <div class="container mx-auto">
         <div
-          class="box1__content absolute top-48 md:top-80 md:left-32 text-white md:ml-16  md:w-3/4 ml-4 "
+          class="
+            box1__content
+            absolute
+            top-48
+            md:top-64 md:left-32
+            text-white
+            md:ml-16 md:w-3/4
+            ml-4
+          "
         >
-          <h1 class="text-white text-4xl md:text-7xl lg:text-8xl font-bold leading-12">Web Development Company</h1>
+          <h1
+            class="
+              text-white text-4xl
+              md:text-7xl
+              lg:text-8xl
+              font-bold
+              leading-12
+            "
+          >
+            Web Development Company
+          </h1>
           <p class="text-xl font-semiblod my-7">
             Empowering startups with our innovative web development services
           </p>
           <button
             type="button"
-            class="bg-red-400 rounded-full border-red-400 text-center mt-7 py-5 md:px-9 px-24 hover:bg-transparent border-2"
+            class="
+              bg-red-400
+              rounded-full
+              border-red-400
+              text-center
+              mt-7
+              py-5
+              md:px-9
+              px-24
+              hover:bg-transparent
+              border-2
+            "
           >
             TALK TO US
           </button>
@@ -93,8 +219,18 @@
           From planning to the final launch, our services benefit startups and
           enterprises alike without having to go overboard on development costs.
         </p>
-        <div class="container flex-col mx-auto justify-evenly items-center md:flex-row hidden
-        lg:flex">
+        <div
+          class="
+            container
+            flex-col
+            mx-auto
+            justify-evenly
+            items-center
+            md:flex-row
+            hidden
+            lg:flex
+          "
+        >
           <div
             class="
               max-w-sm
@@ -105,14 +241,13 @@
               rounded-lg
               overflow-hidden
               hover:border-pink-400
-              
             "
           >
             <div class="bg-red-200 mx-auto rounded-full h-16 w-16">
               <img
                 src="./assets/code pc.svg"
                 alt="pc code"
-                class="text-center my-auto p-5 mx-auto "
+                class="text-center my-auto p-5 mx-auto"
               />
             </div>
             <h4 class="text-dark font-bold mt-2 mb-3">Web Application</h4>
@@ -131,7 +266,6 @@
               rounded-lg
               overflow-hidden
               hover:border-pink-400
-              
             "
           >
             <div class="bg-pink-100 mx-auto rounded-full h-16 w-16">
@@ -173,7 +307,19 @@
             </p>
           </div>
         </div>
-        <div class="container hidden lg:flex flex-col mx-auto justify-evenly items-center md:flex-row mt-7">
+        <div
+          class="
+            container
+            hidden
+            lg:flex
+            flex-col
+            mx-auto
+            justify-evenly
+            items-center
+            md:flex-row
+            mt-7
+          "
+        >
           <div
             class="
               max-w-sm
@@ -255,29 +401,32 @@
           </div>
         </div>
         <div class="container col px-2 lg:hidden">
-        
-          <div class="tabs ">
+          <div class="tabs">
             <div class="tab border border-accordion mb-2">
-              <input type="checkbox" id="chck1">
-              <label class="tab-label text-dark text-center " for="chck1">Web Application</label>
+              <input type="checkbox" id="chck1" />
+              <label class="tab-label text-dark text-center" for="chck1"
+                >Web Application</label
+              >
               <div class="tab-content text-center">
                 <div class="bg-red-200 mx-auto rounded-full h-16 w-16">
                   <img
                     src="./assets/code pc.svg"
                     alt="pc code"
-                    class="text-center my-auto p-5 mx-auto "
+                    class="text-center my-auto p-5 mx-auto"
                   />
                 </div>
                 <h4 class="text-dark font-bold mt-2 mb-3">Web Application</h4>
                 <p class="text-light text-sm">
-                  We use the latest frontend and backend technologies to build super
-                  fast web apps that your customers will love.
+                  We use the latest frontend and backend technologies to build
+                  super fast web apps that your customers will love.
                 </p>
               </div>
             </div>
-            <div class="tab  border border-accordion mb-2">
-              <input type="checkbox" id="chck2">
-              <label class="tab-label text-dark text-center" for="chck2">Mobile Application</label>
+            <div class="tab border border-accordion mb-2">
+              <input type="checkbox" id="chck2" />
+              <label class="tab-label text-dark text-center" for="chck2"
+                >Mobile Application</label
+              >
               <div class="tab-content text-center">
                 <div class="bg-pink-100 mx-auto rounded-full h-16 w-16">
                   <img
@@ -286,16 +435,20 @@
                     class="text-center my-auto p-5 mx-auto"
                   />
                 </div>
-                <h4 class="text-dark font-bold mt-2 mb-3">Mobile Application</h4>
+                <h4 class="text-dark font-bold mt-2 mb-3">
+                  Mobile Application
+                </h4>
                 <p class="text-light text-sm">
                   We build high performance mobile apps that can run on multiple
                   platforms using technologies like React Native and Flutter.
                 </p>
               </div>
             </div>
-            <div class="tab  border border-accordion mb-2">
-              <input type="checkbox" id="chck3">
-              <label class="tab-label text-dark text-center" for="chck3">Cloud Architecture</label>
+            <div class="tab border border-accordion mb-2">
+              <input type="checkbox" id="chck3" />
+              <label class="tab-label text-dark text-center" for="chck3"
+                >Cloud Architecture</label
+              >
               <div class="tab-content text-center">
                 <div class="bg-gray-300 mx-auto rounded-full h-16 w-16">
                   <img
@@ -304,16 +457,20 @@
                     class="text-center my-auto p-5 mx-auto"
                   />
                 </div>
-                <h4 class="text-dark font-bold mt-2 mb-3">Cloud Architecture</h4>
+                <h4 class="text-dark font-bold mt-2 mb-3">
+                  Cloud Architecture
+                </h4>
                 <p class="text-light text-sm">
-                  We use serverless technologies like AWS and Google Cloud to build
-                  highly secure and scalable applications.
+                  We use serverless technologies like AWS and Google Cloud to
+                  build highly secure and scalable applications.
                 </p>
               </div>
             </div>
-            <div class="tab  border border-accordion mb-2">
-              <input type="checkbox" id="chck4">
-              <label class="tab-label text-dark text-center" for="chck4">Idea to Full Digital Product</label>
+            <div class="tab border border-accordion mb-2">
+              <input type="checkbox" id="chck4" />
+              <label class="tab-label text-dark text-center" for="chck4"
+                >Idea to Full Digital Product</label
+              >
               <div class="tab-content text-center">
                 <div class="bg-first mx-auto rounded-full h-16 w-16">
                   <img
@@ -332,9 +489,11 @@
                 </p>
               </div>
             </div>
-            <div class="tab  border border-accordion mb-2">
-              <input type="checkbox" id="chck5">
-              <label class="tab-label text-dark text-center" for="chck5">MVP Development</label>
+            <div class="tab border border-accordion mb-2">
+              <input type="checkbox" id="chck5" />
+              <label class="tab-label text-dark text-center" for="chck5"
+                >MVP Development</label
+              >
               <div class="tab-content text-center">
                 <div class="bg-second mx-auto rounded-full h-16 w-16">
                   <img
@@ -345,15 +504,17 @@
                 </div>
                 <h4 class="text-dark font-bold mt-2 mb-3">MVP Development</h4>
                 <p class="text-light text-sm">
-                  Our team of architects, developers and designers will help you get
-                  your concepts up and running in no time and help you get the
-                  crucial first to market advantage.
+                  Our team of architects, developers and designers will help you
+                  get your concepts up and running in no time and help you get
+                  the crucial first to market advantage.
                 </p>
               </div>
             </div>
-            <div class="tab  border border-accordion mb-2">
-              <input type="checkbox" id="chck6">
-              <label class="tab-label text-dark text-center" for="chck6">IoT Architecture</label>
+            <div class="tab border border-accordion mb-2">
+              <input type="checkbox" id="chck6" />
+              <label class="tab-label text-dark text-center" for="chck6"
+                >IoT Architecture</label
+              >
               <div class="tab-content text-center">
                 <div class="bg-red-400 mx-auto rounded-full h-16 w-16">
                   <img
@@ -364,13 +525,14 @@
                 </div>
                 <h4 class="text-dark font-bold mt-2 mb-3">IoT Architecture</h4>
                 <p class="text-light text-sm">
-                  Discover the untapped potential in your business by adopting the
-                  latest IoT solutions to automate processes and boost your ROI.
+                  Discover the untapped potential in your business by adopting
+                  the latest IoT solutions to automate processes and boost your
+                  ROI.
                 </p>
               </div>
             </div>
           </div>
-        </div>   
+        </div>
         <div class="text-center">
           <h2 class="heading pt-16">Got an Awesome idea?</h2>
           <hr class="bg-pink-500 text-center mx-auto w-36 h-1" />
@@ -391,18 +553,15 @@
               py-5
               px-9
               border-newp
-              hover:bg-transparent border-2 hover:text-newp
+              hover:bg-transparent
+              border-2
+              hover:text-newp
             "
           >
             Let's start
           </button>
         </div>
       </div>
-
-        
-        
-
-
     </section>
     <!-- why choose -->
     <section class="container mt-8" id="Features">
@@ -416,43 +575,64 @@
           applications.
         </p>
       </div>
-      <div class="container text-left flex flex-col justify-between items-center md:flex-row">
+      <div
+        class="
+          container
+          text-left
+          flex flex-col
+          justify-between
+          items-center
+          md:flex-row
+        "
+      >
         <div class="flex items-start md:block md:w-3/12 p-6">
           <img src="./assets/coding boy.svg" alt="coding boy" class="mr-5" />
-         <div> <h4 class="text-dark font-bold mt-2 mb-3">
-          We Listen and We Pitch In
-        </h4>
-        <p class="text-light text-sm">
-          We take the time to know your business to understand what makes it
-          unique so that we can come up with solutions best suited to your
-          needs.
-        </p></div>
+          <div>
+            <h4 class="text-dark font-bold mt-2 mb-3">
+              We Listen and We Pitch In
+            </h4>
+            <p class="text-light text-sm">
+              We take the time to know your business to understand what makes it
+              unique so that we can come up with solutions best suited to your
+              needs.
+            </p>
+          </div>
         </div>
         <div class="flex items-start md:block md:w-3/12 p-6">
-          <img src="./assets/code thumps up.svg" alt="coding boy" class="mr-5" />
-         <div> <h4 class="text-dark font-bold mt-2 mb-3">Code Quality</h4>
-          <p class="text-light text-sm">
-            We have a good code quality process that ensures better results and
-            reduced risks for your business without any delays in launch.
-          </p></div>
+          <img
+            src="./assets/code thumps up.svg"
+            alt="coding boy"
+            class="mr-5"
+          />
+          <div>
+            <h4 class="text-dark font-bold mt-2 mb-3">Code Quality</h4>
+            <p class="text-light text-sm">
+              We have a good code quality process that ensures better results
+              and reduced risks for your business without any delays in launch.
+            </p>
+          </div>
         </div>
         <div class="flex items-start md:block md:w-3/12 p-6">
-          <img src="./assets/group person.svg" alt="coding boy"  class="mr-5"/>
-         <div> <h4 class="text-dark font-bold mt-2 mb-3">Awesome Team</h4>
-          <p class="text-light text-sm">
-            Right from the get go our explosive team of architects, developers
-            and team leaders work together to bring you the best tech solutions
-          </p></div>
+          <img src="./assets/group person.svg" alt="coding boy" class="mr-5" />
+          <div>
+            <h4 class="text-dark font-bold mt-2 mb-3">Awesome Team</h4>
+            <p class="text-light text-sm">
+              Right from the get go our explosive team of architects, developers
+              and team leaders work together to bring you the best tech
+              solutions
+            </p>
+          </div>
         </div>
         <div class="flex items-start md:block md:w-3/12 p-6">
           <img src="./assets/Group 14.svg" alt="coding boy" class="mr-5" />
           <div>
             <h4 class="text-dark font-bold mt-2 mb-3">Communication</h4>
             <p class="text-light text-sm">
-              Communication is a key part of our success. You'll be updated daily
-              on project progress. We are always open to suggestions and clearing
-              any queries
-            </p></div>
+              Communication is a key part of our success. You'll be updated
+              daily on project progress. We are always open to suggestions and
+              clearing any queries
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -461,7 +641,18 @@
       <div class="container mx-auto">
         <h2 class="heading pt-16">OUR PORTFOLIO</h2>
         <hr class="bg-pink-500 text-center mx-auto w-36 h-1" />
-        <p class="text-center md:w-7/12 p-5 mx-auto text-light pt-5 pb-12 text-sm">
+        <p
+          class="
+            text-center
+            md:w-7/12
+            p-5
+            mx-auto
+            text-light
+            pt-5
+            pb-12
+            text-sm
+          "
+        >
           We had the privilege of helping some of the best startups and
           enterprises across multiple industries achieve their business goals.
         </p>
@@ -684,7 +875,7 @@
       </div>
     </section>
     <!-- teck stack -->
-    <section class="text-center md:m-16" id="Team Stack">
+    <section class="text-center md:m-16" id="Tech Stack">
       <div class="container mx-auto">
         <h2 class="text-dark text-center text-4xl font-bold pt-16 pb-3">
           OUR TECH STACK
@@ -698,11 +889,23 @@
           We meticulously choose the best technology stack to deliver a solution
           that perfectly meets your business and client expectations.
         </p>
-        <div class="flex flex-col items-center justify-between lg:flex-row gap-y-4  ">
+        <div
+          class="flex flex-col items-center justify-between lg:flex-row md:gap-y-4"
+        >
           <div class="md:w-1/5 text-center">
             <h4 class="text-dark text-xl font-bold mb-2 text-center">WEB</h4>
-            <div class="flex items-center gap-x-8 justify-center lg:justify-between flex-row lg:flex-col">
-              <div class="flex items-center  gap-x-10 justify-around">
+            <div
+              class="
+                flex
+                items-center
+                md:gap-x-8
+                justify-center
+                lg:justify-between
+                flex-row
+                lg:flex-col
+              "
+            >
+              <div class="flex items-center md:gap-x-10 justify-around">
                 <div class="text-center w-20">
                   <img
                     src="./assets/node.svg"
@@ -720,7 +923,7 @@
                   <p class="text-xs font-semibold">VUE</p>
                 </div>
               </div>
-              <div class="flex items-center gap-x-10 justify-around lg:mt-4">
+              <div class="flex items-center md:gap-x-10 justify-around lg:mt-4">
                 <div class="text-center w-20">
                   <img
                     src="./assets/react.svg"
@@ -742,8 +945,18 @@
           </div>
           <div class="md:w-1/5 text-center">
             <h4 class="text-dark text-xl font-bold mb-2 text-center">MOBILE</h4>
-            <div class="flex items-center justify-center  lg:justify-between flex-row lg:flex-col gap-x-8">
-              <div class="flex items-center gap-x-10 justify-around">
+            <div
+              class="
+                flex
+                items-center
+                justify-center
+                lg:justify-between
+                flex-row
+                lg:flex-col
+                md:gap-x-8
+              "
+            >
+              <div class="flex items-center md:gap-x-10 justify-around">
                 <div class="text-center w-20">
                   <img
                     src="./assets/react.svg"
@@ -761,7 +974,7 @@
                   <p class="text-xs font-semibold">FLUTTER</p>
                 </div>
               </div>
-              <div class="flex items-center gap-x-10 justify-around md:mt-4">
+              <div class="flex items-center md:gap-x-10 justify-around md:mt-4">
                 <div class="text-center w-20">
                   <img
                     src="./assets/NATIVESCRIPT.SVG"
@@ -783,8 +996,18 @@
           </div>
           <div class="md:w-1/5 text-center">
             <h4 class="text-dark text-xl font-bold mb-2 text-center">CLOUD</h4>
-            <div class="flex items-center justify-center lg:justify-between flex-row lg:flex-col gap-x-8">
-              <div class="flex items-center gap-x-10 justify-around">
+            <div
+              class="
+                flex
+                items-center
+                justify-center
+                lg:justify-between
+                flex-row
+                lg:flex-col
+                md:gap-x-8
+              "
+            >
+              <div class="flex items-center md:gap-x-10 justify-around">
                 <div class="text-center w-20">
                   <img
                     src="./assets/AWS.SVG"
@@ -802,7 +1025,7 @@
                   <p class="text-xs font-semibold">AZURE</p>
                 </div>
               </div>
-              <div class="flex items-center gap-x-10 justify-around md:mt-4">
+              <div class="flex items-center md:gap-x-10 justify-around md:mt-4">
                 <div class="text-center w-20">
                   <img
                     src="./assets/GCP.SVG"
@@ -826,8 +1049,17 @@
             <h4 class="text-dark text-xl font-bold mb-2 text-center">
               IoT,ML and AI
             </h4>
-            <div class="flex items-center justify-center lg:justify-between flex-row lg:flex-col">
-              <div class="flex items-center gap-x-10 justify-around">
+            <div
+              class="
+                flex
+                items-center
+                justify-center
+                lg:justify-between
+                flex-row
+                lg:flex-col
+              "
+            >
+              <div class="flex items-center md:gap-x-10 justify-around">
                 <div class="text-center w-20">
                   <img
                     src="./assets/MQTT.svg"
@@ -845,7 +1077,15 @@
                   <p class="text-xs font-semibold">BIGML</p>
                 </div>
               </div>
-              <div class="flex items-center gap-x-10 justify-center lg:justify-around lg:mt-4">
+              <div
+                class="
+                  flex
+                  items-center
+                  md:gap-x-10
+                  justify-center
+                  lg:justify-around lg:mt-4
+                "
+              >
                 <div class="text-center w-20">
                   <img
                     src="./assets/TensorFlow.svg"
@@ -867,8 +1107,18 @@
           </div>
           <div class="md:w-1/5 text-center">
             <h4 class="text-dark text-xl font-bold mb-2 text-center">DESIGN</h4>
-            <div class="flex items-center justify-center lg:justify-between flex-row lg:flex-col gap-x-8">
-              <div class="flex items-center gap-x-10 justify-around">
+            <div
+              class="
+                flex
+                items-center
+                justify-center
+                lg:justify-between
+                flex-row
+                lg:flex-col
+                md:gap-x-8
+              "
+            >
+              <div class="flex items-center md:gap-x-10 justify-around">
                 <div class="text-center w-20">
                   <img
                     src="./assets/sketch (1).svg"
@@ -886,7 +1136,15 @@
                   <p class="text-xs font-semibold">FIGMA</p>
                 </div>
               </div>
-              <div class="flex items-center gap-x-10 justify-center lg:justify-around lg:mt-4">
+              <div
+                class="
+                  flex
+                  items-center
+                  md:gap-x-10
+                  justify-center
+                  lg:justify-around lg:mt-4
+                "
+              >
                 <div class="text-center w-20">
                   <img
                     src="./assets/photoshop.svg"
@@ -911,42 +1169,100 @@
     </section>
     <!-- coffee rocket -->
     <section class="bg-coffee w-full mb-24 mt-4">
-      
-      <div class="container mx-auto flex flex-wrap flex-col md:flex-row items-center justify-evenly text-white  ">
-       <div class="flex gap-x-8 md:gap-x-24">
-        <div class="md:w-64 w-44 max-w-xs border-dotted border-2 text-center my-4">
-          <img src="./assets/love.svg" alt="favarouite" class=" text-center mx-auto h-12 w-12 mt-4" >
-          <h2 class="font-semibold text-2xl my-2"> ISO 9001:2015</h2>
-          <p class="font-semibold mb-3">certified company</p>
-
+      <div
+        class="
+          container
+          mx-auto
+          flex flex-wrap flex-col
+          md:flex-row
+          items-center
+          justify-evenly
+          text-white
+          py-8
+        "
+      >
+        <div class="flex gap-x-8 md:gap-x-12">
+          <div
+            class="
+              md:w-64
+              w-44
+              max-w-xs
+              border-dotted border-2
+              text-center
+              my-4
+            "
+          >
+            <img
+              src="./assets/love.svg"
+              alt="favarouite"
+              class="text-center mx-auto h-12 w-12 mt-4"
+            />
+            <h2 class="font-semibold text-2xl my-2">ISO 9001:2015</h2>
+            <p class="font-semibold mb-3">certified company</p>
+          </div>
+          <div
+            class="
+              md:w-64
+              w-44
+              max-w-xs
+              border-dotted border-2
+              text-center
+              my-4
+            "
+          >
+            <img
+              src="./assets/love.svg"
+              alt="favarouite"
+              class="text-center mx-auto h-12 w-12 mt-4"
+            />
+            <h2 class="font-semibold text-2xl my-2">$10M+</h2>
+            <p class="font-semibold mb-3">Help raised</p>
+          </div>
         </div>
-        <div class="md:w-64 w-44 max-w-xs border-dotted border-2 text-center my-4">
-          <img src="./assets/love.svg" alt="favarouite" class=" text-center mx-auto h-12 w-12 mt-4" >
-          <h2 class="font-semibold text-2xl my-2"> $10M+</h2>
-          <p class="font-semibold mb-3">Help raised</p>
+        <div class="flex gap-x-8 md:gap-x-12">
+          <div
+            class="
+              md:w-64
+              w-44
+              max-w-xs
+              border-dotted border-2
+              text-center
+              my-4
+            "
+          >
+            <img
+              src="./assets/love.svg"
+              alt="favarouite"
+              class="text-center mx-auto h-12 w-12 mt-4"
+            />
+            <h2 class="font-semibold text-2xl my-2">7+</h2>
+            <p class="font-semibold mb-3">Countries</p>
+          </div>
+          <div
+            class="
+              max-w-xs
+              md:w-64
+              w-44
+              border-dotted border-2
+              text-center
+              my-4
+            "
+          >
+            <img
+              src="./assets/love.svg"
+              alt="favarouite"
+              class="text-center mx-auto h-12 w-12 mt-4"
+            />
+            <h2 class="font-semibold text-2xl my-2">50+</h2>
+            <p class="font-semibold mb-3">Peoples Love</p>
+          </div>
         </div>
-       </div>
-        <div class="flex gap-x-8 md:gap-x-24">
-          <div class="md:w-64 w-44 max-w-xs border-dotted border-2 text-center my-4">
-          <img src="./assets/love.svg" alt="favarouite" class=" text-center mx-auto h-12 w-12 mt-4" >
-          <h2 class="font-semibold text-2xl my-2">7+</h2>
-          <p class="font-semibold mb-3">Countries</p>
-
-        </div>
-        <div class="max-w-xs md:w-64 w-44 border-dotted border-2 text-center my-4">
-          <img src="./assets/love.svg" alt="favarouite" class=" text-center mx-auto h-12 w-12 mt-4" >
-          <h2 class="font-semibold text-2xl my-2">50+</h2>
-          <p class="font-semibold mb-3">Peoples Love</p>
-
-        </div></div>
-        
-
       </div>
     </section>
     <!-- profile card -->
     <section class="mb-36 hidden md:block">
       <div class="container mx-auto flex items-center justify-evenly">
-        <div class="max-w-sm shadow-lg p-3 h-52">
+        <div class="max-w-sm shadow-md p-3 h-52">
           <div class="flex items-center justify-start">
             <img
               src="./assets/smiling.svg"
@@ -968,7 +1284,7 @@
             communicators. We enjoy working with them very much!"
           </p>
         </div>
-        <div class="max-w-sm shadow-lg p-3 h-52">
+        <div class="max-w-sm shadow-md p-3 h-52">
           <div class="flex items-center justify-start">
             <img
               src="./assets/speaking.svg"
@@ -990,7 +1306,7 @@
       </div>
     </section>
     <!-- core team -->
-    <section class="bg-bgc">
+    <section class="bg-bgc" id="Team">
       <div class="container mx-auto">
         <h2 class="heading pt-16">OUR CORE TEAM</h2>
         <hr class="bg-pink-500 text-center mx-auto w-36 h-1" />
@@ -999,57 +1315,303 @@
           for the future
         </p>
       </div>
-      <div class="container flex items-center justify-evenly responsive" >
-        <div class="max-w-sm border-2 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200 text-center  mr-8">
-          <img src="./assets/faiz.svg" alt="" class="object-cover">
+      <div class="container flex items-center justify-evenly responsive">
+        <div
+          class="
+            max-w-sm
+            border-2
+            rounded-lg
+            overflow-hidden
+            shadow-lg
+            hover:shadow-2xl
+            transform
+            duration-200
+            text-center
+            mr-8
+          "
+        >
+          <img src="./assets/faiz.svg" alt="" class="object-cover" />
           <h4 class="text-dark font-bold mt-2 mb-3">Faiz</h4>
           <p class="text-light text-sm">Chief Executive Officer</p>
-          <a class="linkedin text-center" target="_blank" href="https://www.linkedin.com/company/neoito/"><i class="text-white hover:text-blue-700 fab fa-linkedin-in my-2 py-2 rounded-full bg-newp w-8 h-8"></i></a>
+          <a
+            class="linkedin text-center"
+            target="_blank"
+            href="https://www.linkedin.com/company/neoito/"
+            ><i
+              class="
+                text-white
+                hover:text-blue-700
+                fab
+                fa-linkedin-in
+                my-2
+                py-2
+                rounded-full
+                bg-newp
+                w-8
+                h-8
+              "
+            ></i
+          ></a>
         </div>
-        <div class="max-w-sm border-2 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200 text-center  mr-8">
-          <img src="./assets/cbo.svg" alt="">
+        <div
+          class="
+            max-w-sm
+            border-2
+            rounded-lg
+            overflow-hidden
+            shadow-lg
+            hover:shadow-2xl
+            transform
+            duration-200
+            text-center
+            mr-8
+          "
+        >
+          <img src="./assets/cbo.svg" alt="" />
           <h4 class="text-dark font-bold mt-2 mb-3">Abhilash</h4>
           <p class="text-light text-sm">Chief business Officer</p>
-          <a class="linkedin text-center" target="_blank" href="https://www.linkedin.com/company/neoito/"><i class="text-white hover:text-blue-700  fab fa-linkedin-in my-2 py-2 rounded-full bg-newp w-8 h-8"></i></a>
+          <a
+            class="linkedin text-center"
+            target="_blank"
+            href="https://www.linkedin.com/company/neoito/"
+            ><i
+              class="
+                text-white
+                hover:text-blue-700
+                fab
+                fa-linkedin-in
+                my-2
+                py-2
+                rounded-full
+                bg-newp
+                w-8
+                h-8
+              "
+            ></i
+          ></a>
         </div>
-        <div class="max-w-sm border-2 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200 text-center  mr-8">
-          <img src="./assets/coo.svg" alt="">
+        <div
+          class="
+            max-w-sm
+            border-2
+            rounded-lg
+            overflow-hidden
+            shadow-lg
+            hover:shadow-2xl
+            transform
+            duration-200
+            text-center
+            mr-8
+          "
+        >
+          <img src="./assets/coo.svg" alt="" />
           <h4 class="text-dark font-bold mt-2 mb-3">Rakesh Kiron</h4>
           <p class="text-light text-sm">Chief Operating Officer</p>
-          <a class="linkedin text-center" target="_blank" href="https://www.linkedin.com/company/neoito/"><i class="text-white hover:text-blue-700 fab fa-linkedin-in my-2 py-2 rounded-full bg-newp w-8 h-8"></i></a>
+          <a
+            class="linkedin text-center"
+            target="_blank"
+            href="https://www.linkedin.com/company/neoito/"
+            ><i
+              class="
+                text-white
+                hover:text-blue-700
+                fab
+                fa-linkedin-in
+                my-2
+                py-2
+                rounded-full
+                bg-newp
+                w-8
+                h-8
+              "
+            ></i
+          ></a>
         </div>
-        <div class="max-w-sm border-2 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200 text-center  mr-8">
-          <img src="./assets/tech.svg" alt="">
+        <div
+          class="
+            max-w-sm
+            border-2
+            rounded-lg
+            overflow-hidden
+            shadow-lg
+            hover:shadow-2xl
+            transform
+            duration-200
+            text-center
+            mr-8
+          "
+        >
+          <img src="./assets/tech.svg" alt="" />
           <h4 class="text-dark font-bold mt-2 mb-3">Suralal</h4>
-          <p class="text-light text-sm ">Tech Lead</p>
-          <a class="linkedin text-center " target="_blank" href="https://www.linkedin.com/company/neoito/"><i class="text-white hover:text-blue-700 fab fa-linkedin-in my-2 py-2 rounded-full bg-newp w-8 h-8"></i></a>
+          <p class="text-light text-sm">Tech Lead</p>
+          <a
+            class="linkedin text-center"
+            target="_blank"
+            href="https://www.linkedin.com/company/neoito/"
+            ><i
+              class="
+                text-white
+                hover:text-blue-700
+                fab
+                fa-linkedin-in
+                my-2
+                py-2
+                rounded-full
+                bg-newp
+                w-8
+                h-8
+              "
+            ></i
+          ></a>
         </div>
-        <div class="max-w-sm border-2 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200 text-center  mr-8">
-          <img src="./assets/faiz.svg" alt="">
+        <div
+          class="
+            max-w-sm
+            border-2
+            rounded-lg
+            overflow-hidden
+            shadow-lg
+            hover:shadow-2xl
+            transform
+            duration-200
+            text-center
+            mr-8
+          "
+        >
+          <img src="./assets/faiz.svg" alt="" />
           <h4 class="text-dark font-bold mt-2 mb-3">Faiz</h4>
           <p class="text-light text-sm">Chief Executive Officer</p>
-          <a class="linkedin text-center" target="_blank" href="https://www.linkedin.com/company/neoito/"><i class="text-white hover:text-blue-700 fab fa-linkedin-in my-2 py-2 rounded-full bg-newp w-8 h-8"></i></a>
+          <a
+            class="linkedin text-center"
+            target="_blank"
+            href="https://www.linkedin.com/company/neoito/"
+            ><i
+              class="
+                text-white
+                hover:text-blue-700
+                fab
+                fa-linkedin-in
+                my-2
+                py-2
+                rounded-full
+                bg-newp
+                w-8
+                h-8
+              "
+            ></i
+          ></a>
         </div>
-        <div class="max-w-sm border-2 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200 text-center  mr-8">
-          <img src="./assets/cbo.svg" alt="">
+        <div
+          class="
+            max-w-sm
+            border-2
+            rounded-lg
+            overflow-hidden
+            shadow-lg
+            hover:shadow-2xl
+            transform
+            duration-200
+            text-center
+            mr-8
+          "
+        >
+          <img src="./assets/cbo.svg" alt="" />
           <h4 class="text-dark font-bold mt-2 mb-3">Abhilash</h4>
           <p class="text-light text-sm">Chief business Officer</p>
-          <a class="linkedin text-center" target="_blank" href="https://www.linkedin.com/company/neoito/"><i class="text-white hover:text-blue-700 fab fa-linkedin-in my-2 py-2 rounded-full bg-newp w-8 h-8"></i></a>
+          <a
+            class="linkedin text-center"
+            target="_blank"
+            href="https://www.linkedin.com/company/neoito/"
+            ><i
+              class="
+                text-white
+                hover:text-blue-700
+                fab
+                fa-linkedin-in
+                my-2
+                py-2
+                rounded-full
+                bg-newp
+                w-8
+                h-8
+              "
+            ></i
+          ></a>
         </div>
-        <div class="max-w-sm border-2 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200 text-center  mr-8">
-          <img src="./assets/coo.svg" alt="">
+        <div
+          class="
+            max-w-sm
+            border-2
+            rounded-lg
+            overflow-hidden
+            shadow-lg
+            hover:shadow-2xl
+            transform
+            duration-200
+            text-center
+            mr-8
+          "
+        >
+          <img src="./assets/coo.svg" alt="" />
           <h4 class="text-dark font-bold mt-2 mb-3">Rakesh Kiron</h4>
           <p class="text-light text-sm">Chief Operating Officer</p>
-          <a class="linkedin text-center" target="_blank" href="https://www.linkedin.com/company/neoito/"><i class="text-white hover:text-blue-700 fab fa-linkedin-in my-2 py-2 rounded-full bg-newp w-8 h-8"></i></a>
+          <a
+            class="linkedin text-center"
+            target="_blank"
+            href="https://www.linkedin.com/company/neoito/"
+            ><i
+              class="
+                text-white
+                hover:text-blue-700
+                fab
+                fa-linkedin-in
+                my-2
+                py-2
+                rounded-full
+                bg-newp
+                w-8
+                h-8
+              "
+            ></i
+          ></a>
         </div>
-        <div class="max-w-sm border-2 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200 text-center  mr-8">
-          <img src="./assets/tech.svg" alt="">
+        <div
+          class="
+            max-w-sm
+            border-2
+            rounded-lg
+            overflow-hidden
+            shadow-lg
+            hover:shadow-2xl
+            transform
+            duration-200
+            text-center
+            mr-8
+          "
+        >
+          <img src="./assets/tech.svg" alt="" />
           <h4 class="text-dark font-bold mt-2 mb-3">Suralal</h4>
-          <p class="text-light text-sm ">Tech Lead</p>
-          <a class="linkedin text-center " target="_blank" href="https://www.linkedin.com/company/neoito/"><i class="text-white hover:text-blue-700 fab fa-linkedin-in my-2 py-2 rounded-full bg-newp w-8 h-8"></i></a>
+          <p class="text-light text-sm">Tech Lead</p>
+          <a
+            class="linkedin text-center"
+            target="_blank"
+            href="https://www.linkedin.com/company/neoito/"
+            ><i
+              class="
+                text-white
+                hover:text-blue-700
+                fab
+                fa-linkedin-in
+                my-2
+                py-2
+                rounded-full
+                bg-newp
+                w-8
+                h-8
+              "
+            ></i
+          ></a>
         </div>
-        
-
       </div>
     </section>
     <!-- blog -->
@@ -1057,13 +1619,33 @@
       <div class="container mx-auto">
         <h2 class="heading pt-16">BLOGS</h2>
         <hr class="bg-pink-500 text-center mx-auto font-semibold w-36 h-1" />
-        <p class="text-center md:w-7/12 p-5 mx-auto text-light pt-5 pb-12 text-sm">
+        <p
+          class="
+            text-center
+            md:w-7/12
+            p-5
+            mx-auto
+            text-light
+            pt-5
+            pb-12
+            text-sm
+          "
+        >
           We are constantly learning new stuff and love to share it with you
           guys. Take a look.
         </p>
       </div>
       <div
-        class="mt-6 container gap-10 mx-auto lg:flex items-center justify-evenly hidden "
+        class="
+          mt-6
+          container
+          gap-10
+          mx-auto
+          lg:flex
+          items-center
+          justify-evenly
+          hidden
+        "
       >
         <article
           class="
@@ -1090,7 +1672,9 @@
             <p class="text-light text-sm text-left font-normal">
               August 23,2019
             </p>
-            <h3 class="text-xl hover:text-newp text-dark font-semibold w-3/4 pb-4">
+            <h3
+              class="text-xl hover:text-newp text-dark font-semibold w-3/4 pb-4"
+            >
               How to expose localhost to any device using Ngrok
             </h3>
             <img
@@ -1135,7 +1719,9 @@
             <p class="text-light text-sm text-left font-normal">
               August 23,2019
             </p>
-            <h3 class="text-xl hover:text-newp text-dark font-semibold w-3/4 pb-4">
+            <h3
+              class="text-xl hover:text-newp text-dark font-semibold w-3/4 pb-4"
+            >
               Introduction to Machine Learning
             </h3>
             <img
@@ -1179,7 +1765,9 @@
             <p class="text-light text-sm text-left font-normal">
               August 23,2019
             </p>
-            <h3 class="text-xl hover:text-newp text-dark font-semibold w-3/4 pb-4">
+            <h3
+              class="text-xl hover:text-newp text-dark font-semibold w-3/4 pb-4"
+            >
               Okay Google! What's new in search?
             </h3>
             <img
@@ -1200,7 +1788,17 @@
         </article>
       </div>
       <div
-        class="mt-6 container gap-10 mx-auto flex items-center justify-evenly responsive3 lg:hidden "
+        class="
+          mt-6
+          container
+          gap-10
+          mx-auto
+          flex
+          items-center
+          justify-evenly
+          responsive3
+          lg:hidden
+        "
       >
         <article
           class="
@@ -1228,7 +1826,16 @@
             <p class="text-light text-sm text-left font-normal">
               August 23,2019
             </p>
-            <h3 class="text-xl hover:text-newp text-dark font-semibold lg:w-3/4 pb-4">
+            <h3
+              class="
+                text-xl
+                hover:text-newp
+                text-dark
+                font-semibold
+                lg:w-3/4
+                pb-4
+              "
+            >
               How to expose localhost to any device using Ngrok
             </h3>
             <img
@@ -1274,7 +1881,16 @@
             <p class="text-light text-sm text-left font-normal">
               August 23,2019
             </p>
-            <h3 class="text-xl hover:text-newp text-dark font-semibold lg:w-3/4 pb-4">
+            <h3
+              class="
+                text-xl
+                hover:text-newp
+                text-dark
+                font-semibold
+                lg:w-3/4
+                pb-4
+              "
+            >
               Introduction to Machine Learning
             </h3>
             <img
@@ -1319,7 +1935,16 @@
             <p class="text-light text-sm text-left font-normal">
               August 23,2019
             </p>
-            <h3 class="text-xl hover:text-newp text-dark font-semibold lg:w-3/4 pb-4">
+            <h3
+              class="
+                text-xl
+                hover:text-newp
+                text-dark
+                font-semibold
+                lg:w-3/4
+                pb-4
+              "
+            >
               Okay Google! What's new in search?
             </h3>
             <img
@@ -1348,106 +1973,306 @@
         <p class="text-center w-7/12 p-5 mx-auto text-light pt-5 pb-12 text-sm">
           Got the next big idea? Then don't wait.
         </p>
-        <div class=" px-6 flex items-start justify-around flex-col-reverse md:flex-row">
+        <div
+          class="
+            px-6
+            flex
+            items-start
+            justify-around
+            flex-col-reverse
+            md:flex-row
+          "
+        >
           <form class="md:w-3/4 mb-24">
             <div class="flex flex-wrap -mx-3 mb-6">
               <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                
-                <input class="appearance-none block w-full bg-white text-dark border text-sm border-gray-200 rounded-full py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Your Name">
-                <p class="hidden md:block text-red-500 text-xs italic">Please fill out this field.</p>
+                <input
+                  class="
+                    appearance-none
+                    block
+                    w-full
+                    bg-white
+                    text-dark
+                    border
+                    text-sm
+                    border-gray-200
+                    rounded-full
+                    py-3
+                    px-4
+                    mb-3
+                    leading-tight
+                    focus:outline-none focus:bg-white
+                  "
+                  id="grid-first-name"
+                  type="text"
+                  placeholder="Your Name"
+                />
+                <p class="hidden md:block text-red-500 text-xs italic">
+                  Please fill out this field.
+                </p>
               </div>
               <div class="w-full md:w-1/2 px-3">
-                
-                <input class="appearance-none block w-full bg-white text-dark border  text-sm border-gray-200 rounded-full py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Your Email">
+                <input
+                  class="
+                    appearance-none
+                    block
+                    w-full
+                    bg-white
+                    text-dark
+                    border
+                    text-sm
+                    border-gray-200
+                    rounded-full
+                    py-3
+                    px-4
+                    leading-tight
+                    focus:outline-none focus:bg-white focus:border-gray-500
+                  "
+                  id="grid-last-name"
+                  type="text"
+                  placeholder="Your Email"
+                />
               </div>
             </div>
             <div class="flex flex-wrap -mx-3 mb-6">
               <div class="w-full px-3">
-                
-                <input class="appearance-none block w-full bg-white text-dark border text-sm border-gray-200 rounded-full py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="text" placeholder="Subject">
-                
+                <input
+                  class="
+                    appearance-none
+                    block
+                    w-full
+                    bg-white
+                    text-dark
+                    border
+                    text-sm
+                    border-gray-200
+                    rounded-full
+                    py-3
+                    px-4
+                    mb-3
+                    leading-tight
+                    focus:outline-none focus:bg-white focus:border-gray-500
+                  "
+                  id="grid-password"
+                  type="text"
+                  placeholder="Subject"
+                />
               </div>
             </div>
-            
-              <div class="flex flex-wrap -mx-3 mb-1">
-                <div class="w-full px-3">
-                  
-                  <textarea rows="10" class="appearance-none block w-full text-gray-700 border border-gray-200 rounded-3xl py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500" placeholder="Your Message">
-                   
-                  </textarea>
-                </div>
+
+            <div class="flex flex-wrap -mx-3 mb-1">
+              <div class="w-full px-3">
+                <textarea
+                  rows="10"
+                  class="
+                    appearance-none
+                    block
+                    w-full
+                    text-gray-700
+                    border border-gray-200
+                    rounded-3xl
+                    py-3
+                    px-4
+                    mb-3
+                    leading-tight
+                    focus:outline-none focus:border-gray-500
+                  "
+                  placeholder="Your Message"
+                >
+                </textarea>
+              </div>
             </div>
             <div class="md:text-left text-center">
               <button
-              type="button"
-              class="bg-newp border-newp rounded-full mx-auto text-white text-center mt-3 py-3 px-9 hover:bg-transparent border-2 hover:text-newp"
-            >
-              SEND MESSAGE
-            </button>
+                type="button"
+                class="
+                  bg-newp
+                  border-newp
+                  rounded-full
+                  mx-auto
+                  text-white text-center
+                  mt-3
+                  py-3
+                  px-9
+                  hover:bg-transparent
+                  border-2
+                  hover:text-newp
+                "
+              >
+                SEND MESSAGE
+              </button>
             </div>
           </form>
-          <div class="md:w-1/4 flex items-start  justify-between md:flex-col md:px-14">
+          <div
+            class="
+              md:w-1/4
+              flex
+              items-start
+              justify-between
+              md:flex-col md:px-14
+            "
+          >
             <div class="px-6">
-              <img src="./assets/mail.svg" alt="mail" class="my-2">
-            <h4 class="text-dark text-md font-semibold ">E-mail</h4>
-            <p class="text-newp text-sm py-1">bd@neoito.com</p>
+              <img src="./assets/mail.svg" alt="mail" class="my-2" />
+              <h4 class="text-dark text-md font-semibold">E-mail</h4>
+              <p class="text-newp text-sm py-1">bd@neoito.com</p>
             </div>
             <div class="px-6">
-              <img src="./assets/ring_volume_black_24dp.svg" alt="mail" class="my-2">
-            <h4 class="text-dark text-md font-semibold ">Phone</h4>
-            <p class="text-newp text-sm py-1">+91 6238524482</p>
+              <img
+                src="./assets/ring_volume_black_24dp.svg"
+                alt="mail"
+                class="my-2"
+              />
+              <h4 class="text-dark text-md font-semibold">Phone</h4>
+              <p class="text-newp text-sm py-1">+91 6238524482</p>
             </div>
-          
-
-        </div>
-        </div>
-        </div>
-    </section>
-    <!-- footer -->
-    <section class="" >
-      <div class="container flex items-start justify-around my-20 flex-col md:flex-row ">
-        <div class="md:w-1/2 md:text-left text-center">
-          <h4 class="font-bold text-footer text-3xl mx-auto md:m-0 md:w-1/2 mb-6 ">Web Development Company</h4>
-          <p class="text-light md:w-4/5">If you think you have the passion, attitude and capability to join us the next big software company so that we can get the conversion.</p>
-          <ul class=" w-1/4 footer-social flex items-center justify-between mt-3 mx-auto md:mx-0 mb-4">
-            <li ><a class="facebook text-center  " target="_blank" href="https://www.facebook.com/neoito/"><i class="text-white hover:text-blue-700 fab fa-facebook-f py-3 rounded-full bg-newp w-10 h-10 "></i></a>
-            </li>
-            <li><a class="twitter text-center" target="_blank" href="https://twitter.com/neoitocom"><i class="text-white hover:text-blue-700 fab fa-twitter py-3 rounded-full bg-newp w-10 h-10"></i></a></li>
-            <li><a class="linkedin text-center" target="_blank" href="https://www.linkedin.com/company/neoito/"><i class="text-white hover:text-blue-700 fab fa-linkedin-in py-3 rounded-full bg-newp w-10 h-10"></i></a></li>
-          </ul>
-        </div>
-
-
-        <div class="md:w-1/2 text-center md:text-left mx-auto md:m-0">
-          <h4 class=" font-bold text-footer text-center md:text-left text-xl">INSTAGRAM</h4>
-          <div class="flex flex-col items-start mt-4 lg:flex-row">
-            <img src="./assets/1f.svg" alt="">
-            <img src="./assets/2f.svg" alt="">
           </div>
         </div>
       </div>
     </section>
-    <footer class=" container flex justify-between flex-col md:flex-row my-5">
-      <div class="flex justify-center items-center"><p class="text-sm text-light"><a href="www.neoito.com" class="text-" target="_blank">© All Rights Reserved - Powered by neoito.com</a>
-       
-      </p></div>
-
-
-
-      <div class="flex justify-between  items-center  flex-col md:flex-row ">
-        <span class="text-sm text-light"><a href="#" class="">TOS</a></span>
-        <span class="text-sm mx-10 text-light"><a href="#" class="">Privacy Policy</a></span>
-        <span class="text-sm text-light"><a href="#" class="">Cookie Policy</a></span>
-        <span class="text-sm  mx-10 text-light"><a href="#" class=""><img src="./assets/scroll up.svg" alt=""></a></span>
-
+    <!-- footer -->
+    <section class="">
+      <div
+        class="
+          container
+          flex
+          items-start
+          justify-around
+          my-20
+          flex-col
+          md:flex-row
+        "
+      >
+        <div class="md:w-1/2 md:text-left text-center">
+          <h4
+            class="font-bold text-footer text-3xl mx-auto md:m-0 md:w-1/2 mb-6"
+          >
+            Web Development Company
+          </h4>
+          <p class="text-light md:w-4/5">
+            If you think you have the passion, attitude and capability to join
+            us the next big software company so that we can get the conversion.
+          </p>
+          <ul
+            class="
+              w-2/4
+              md:w-1/4
+              footer-social
+              flex
+              items-center
+              justify-between
+              mt-3
+              mx-auto
+              md:mx-0
+              mb-4
+            "
+          >
+            <li>
+              <a
+                class="facebook text-center"
+                target="_blank"
+                href="https://www.facebook.com/neoito/"
+                ><i
+                  class="
+                    text-white
+                    hover:text-blue-700
+                    fab
+                    fa-facebook-f
+                    py-3
+                    rounded-full
+                    bg-newp
+                    w-10
+                    h-10
+                  "
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="twitter text-center"
+                target="_blank"
+                href="https://twitter.com/neoitocom"
+                ><i
+                  class="
+                    text-white
+                    hover:text-blue-700
+                    fab
+                    fa-twitter
+                    py-3
+                    rounded-full
+                    bg-newp
+                    w-10
+                    h-10
+                  "
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="linkedin text-center"
+                target="_blank"
+                href="https://www.linkedin.com/company/neoito/"
+                ><i
+                  class="
+                    text-white
+                    hover:text-blue-700
+                    fab
+                    fa-linkedin-in
+                    py-3
+                    rounded-full
+                    bg-newp
+                    w-10
+                    h-10
+                  "
+                ></i
+              ></a>
+            </li>
+          </ul>
         </div>
-    </footer>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
 
-  <script type="text/javascript" src="./main.js">
-  
-  </script>
+        <div class="md:w-1/2 text-center md:text-left mx-auto md:m-0">
+          <h4 class="font-bold text-footer text-center md:text-left text-xl">
+            INSTAGRAM
+          </h4>
+          <div class="flex flex-col items-start mt-4 lg:flex-row">
+            <img src="./assets/1f.svg" alt="" />
+            <img src="./assets/2f.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="container flex justify-between flex-col md:flex-row my-5">
+      <div class="flex justify-center items-center">
+        <p class="text-sm text-light">
+          <a href="www.neoito.com" class="text-" target="_blank"
+            >© All Rights Reserved - Powered by neoito.com</a
+          >
+        </p>
+      </div>
+
+      <div class="flex justify-between items-center flex-col md:flex-row">
+        <span class="text-sm text-light"><a href="#" class="">TOS</a></span>
+        <span class="text-sm mx-10 text-light"
+          ><a href="#" class="">Privacy Policy</a></span
+        >
+        <span class="text-sm text-light"
+          ><a href="#" class="">Cookie Policy</a></span
+        >
+        <span class="text-sm mx-10 text-light"
+          ><a href="#" class=""><img src="./assets/scroll up.svg" alt="" /></a
+        ></span>
+      </div>
+    </footer>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
