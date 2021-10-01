@@ -126,6 +126,10 @@ function hamfunc(){
     hamc.style.display = 'none';
   }
 }
+hammenu.addEventListener("click",()=>{hammenu.style.display = 'none';
+hamo.style.display = 'block';
+hamc.style.display = 'none';
+});
 var acc = document.getElementsByClassName("accordion");
 // var hide = document.getElementsByClassName("hide");
 var j;

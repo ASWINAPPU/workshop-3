@@ -22,7 +22,7 @@ module.exports = {
         'BGC2': '#F7F9FF',
         'newp': '#EE7892',
         'footer':'#282828',
-        'accordion' :'#D0D0D0',
+        'accordion':'#D0D0D0',
       },
       height: {
         ham: '92vh',
@@ -34,6 +34,9 @@ module.exports = {
     },
     backgroundImage: {
       'center-pattern': "url('../assets/coffe.svg')",
+     },
+     boxShadow: {
+       'all':'0 3px 10px rgb(0 0 0 / 15%)',
      },
   },
   variants: {
