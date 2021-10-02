@@ -23,6 +23,7 @@ module.exports = {
         'newp': '#EE7892',
         'footer':'#282828',
         'accordion':'#D0D0D0',
+        'link':'#F44916'
       },
       height: {
         ham: '92vh',

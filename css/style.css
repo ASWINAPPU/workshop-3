@@ -19,8 +19,7 @@ html {
 }
 
 .box1__overlay {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 82.85%);
-  transform: matrix(1, 0, 0, -1, 0, 0);
+  background-color: #2C3E50;
 }
 
 .box2 {
@@ -32,12 +31,35 @@ html {
   border-top-right-radius: 40%;
 }
 
+@media only screen and (max-width: 568px) {
+  .box4 {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
 .coffee {
   background-image: url(../assets/coffe.svg);
 }
 
 li:hover .borderani {
   animation: border_anim 0.4s linear forwards;
+}
+
+.slick-dots {
+  width: 70%;
+  right: 15%;
+}
+
+.slick-dots li button:before {
+  color: #7C7C7C92;
+  opacity: 57.4%;
+  font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #EE7892;
+  opacity: 100%;
 }
 
 @keyframes border_anim {
@@ -136,6 +158,7 @@ li:hover .borderani {
   height: 1em;
   text-align: center;
   transition: all .35s;
+  transform: rotate(90deg);
 }
 
 .tab-content {
@@ -164,7 +187,7 @@ input:checked + .tab-label {
 }
 
 input:checked + .tab-label::after {
-  transform: rotate(90deg);
+  transform: rotate(270deg);
 }
 
 input:checked ~ .tab-content {

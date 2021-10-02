@@ -4,30 +4,29 @@ $('.responsive').slick({
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 4,
+  arrows : false,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 2,
+        slidesToScroll: 2,
         infinite: true,
         dots: true
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 800,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-       
+        slidesToShow: 3,
+        slidesToScroll: 3
       }
     },
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        
+        slidesToShow: 2,
+        slidesToScroll: 2
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -41,6 +40,7 @@ $('.responsive2').slick({
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 3,
+  arrows : false,
   responsive: [
     {
       breakpoint: 1024,
@@ -76,6 +76,7 @@ $('.responsive3').slick({
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 3,
+  arrows : false,
   responsive: [
     {
       breakpoint: 1024,
@@ -83,7 +84,8 @@ $('.responsive3').slick({
         slidesToShow: 2,
         slidesToScroll: 2,
         infinite: true,
-        dots: true
+        dots: true,
+        
       }
     },
     {
@@ -148,4 +150,19 @@ for (j = 0; i < acc.length; i++) {
     } 
   });
 }
-addEventListener("click")
+mybutton = document.getElementById("mytop");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
