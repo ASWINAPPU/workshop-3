@@ -54,7 +54,7 @@ li:hover .borderani {
 .slick-dots li button:before {
   color: #7C7C7C92;
   opacity: 57.4%;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .slick-dots li.slick-active button:before {
