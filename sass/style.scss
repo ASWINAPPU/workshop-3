@@ -19,9 +19,9 @@ html{
 }
 .box{
     &1{
-    background-image: url(../assets/hero.png);
+    background-image: url(../assets/hero.jpg);
     @media only screen and (max-width: 600px)  {
-        background-image : url(../assets/mobile.png);
+        background-image : url(../assets/mobile.jpg);
         height:745px !important;
     }
       
