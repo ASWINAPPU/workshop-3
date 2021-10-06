@@ -1,10 +1,10 @@
 module.exports = {
   purge: [
-    './src/**/*.html',
+    './*.html',
     './src/**/*.js',
    ],
   darkMode: false, // or 'media' or 'class'
-  important: true,
+  
   
   theme: {
    

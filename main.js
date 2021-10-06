@@ -111,7 +111,7 @@ const hamo = document.getElementById("open");
 const hamc = document.getElementById("close");
 const hammenu = document.getElementById("hamburger");
 
-let i;
+let i=0;
 hamc.style.display = 'none';
 hammenu.style.display = 'none';
 
